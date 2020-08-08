@@ -45,3 +45,11 @@ p {
   font-size: 1.75rem;
   line-height: 1.6;
 }
+
+.social-icon-wrapper {
+  img {
+    cursor: pointer;
+    width: 2.0rem;
+    margin: 1.0rem 1.2rem 0 0;
+  }
+}

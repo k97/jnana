@@ -6,20 +6,33 @@ const Footer = () => {
     <Container>
       <Row>
         <div className="col-4">
-          <p className="label type-white">contact</p>
+          <strong className="label">contact</strong>
+          <div className="social-icon-wrapper">
+            <Link href="/">
+              <img src="/assets/github-icon.svg" />
+            </Link>
+            <Link href="/">
+              <img src="/assets/twitter-icon.svg" />
+            </Link>
+            <Link href="/">
+              <img src="/assets/mail-icon.svg" />
+            </Link>
+            <Link href="/">
+              <img src="/assets/linkedin-icon.svg" />
+            </Link>
+          </div>
+
           <p>
             <Link href="/about">
               <a>About</a>
             </Link>
           </p>
           <p>
-            <Link href="/recordings">
+            <Link href="/recordings" >
               <a>Recordings</a>
             </Link>
           </p>
-          <p>
-            <a title="Work">Github</a>
-          </p>
+
         </div>
       </Row>
     </Container>
