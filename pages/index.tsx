@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+
 import Header from '../components/header'
 import { Layout, Container, Row } from '../components/Layout/index'
 
@@ -19,8 +21,8 @@ const Index = () => {
               <strong>Hello! I am</strong>
               <h1>Karthik</h1>
               <p className="x-large">
-                Designer based in Melbourne, who likes to code,  create experienes that makes people’s lives easier.</p>
-              <p className="x-large">See few of my selective work here, or I record things that I find interesting here.</p>
+                Designer based in Melbourne, who likes to code, create experienes that makes people’s lives easier.</p>
+              <p className="x-large">See few of my selective work here, or I record things that I find interesting <Link href="/recordings">here</Link>.</p>
             </div>
           </Row>
         </Container>

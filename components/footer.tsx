@@ -22,18 +22,11 @@ const Footer = () => {
             </Link>
           </div>
           <span className="label">Copyright &copy; 2020. No Tracking</span>
-
           <p>
             <Link href="/about">
               <a>About</a>
             </Link>
           </p>
-          <p>
-            <Link href="/recordings" >
-              <a>Recordings</a>
-            </Link>
-          </p>
-
         </div>
       </Row>
     </Container>

@@ -17,6 +17,7 @@ const About = () => {
           <Row>
             <div className="col-12">
               <h1>About Page</h1>
+              <p>My full name is Karthikeyan Rajendran</p>
             </div>
           </Row>
         </Container>

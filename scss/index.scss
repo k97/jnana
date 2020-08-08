@@ -15,8 +15,10 @@ body {
   font-family: var(--fontFamily);
   font-weight: 400;
 
+  text-rendering: optimizeLegibility!important;
   font-synthesis: none;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 strong {
