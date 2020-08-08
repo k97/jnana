@@ -21,6 +21,7 @@ const Footer = () => {
               <img src="/assets/linkedin-icon.svg" />
             </Link>
           </div>
+          <span className="label">Copyright &copy; 2020. No Tracking</span>
 
           <p>
             <Link href="/about">
