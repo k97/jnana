@@ -1,10 +1,6 @@
-
 import Head from 'next/head'
-
 import Header from '../components/header'
-
-import Layout from '../components/layout'
-import { Container, Row } from '../components/Layout/index'
+import { Layout, Container, Row } from '../components/Layout/index'
 
 import { CMS_NAME } from '../lib/constants'
 
