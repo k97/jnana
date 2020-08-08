@@ -1,0 +1,44 @@
+@import './var';
+@import './grid';
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+}
+
+* {
+  font-family: var(--fontFamily);
+  font-weight: 400;
+}
+
+strong {
+  font-family: var(--fontBoldFamily);
+  text-transform: uppercase;
+}
+.logo {
+  cursor: pointer;
+}
+
+h1 {
+  font-family: var(--fontHeaderFamily);
+  font-size: 2.75rem;
+  font-weight: bolder;
+  line-height: 1.4;
+  margin-top: 44px;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.75;
+}
+
+p {
+  font-size: 1.75rem;
+  line-height: 1.6;
+}
