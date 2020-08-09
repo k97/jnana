@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Header Extra Bold";
+  src: url("/assets/fonts/headerextrabold.woff2") format("woff2"),
+    url("/assets/fonts/headerextrabold.woff") format("woff"),
+    url("/assets/fonts/headerextrabold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Header Bold";
+  src: url("/assets/fonts/headerbold.woff2") format("woff2"),
+    url("/assets/fonts/headerbold.woff") format("woff"),
+    url("/assets/fonts/headerbold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Karla Bold";
+  src: url("/assets/fonts/Karla-Bold.woff2") format("woff2"),
+    url("/assets/fonts/Karla-Bold.woff") format("woff"),
+    url("/assets/fonts/Karla-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("/assets/fonts/Karla-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Karla-Regular.woff") format("woff"),
+    url("/assets/fonts/Karla-Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
