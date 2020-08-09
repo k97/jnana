@@ -2,9 +2,9 @@
   "name": "k97-jana",
   "version": "8.0.0",
   "scripts": {
-    "dev": "next --port=9797",
     "build": "next build",
-    "start": "next start",
+    "start": "next --port=9797",
+    "start-og": "next start",
     "typecheck": "tsc"
   },
   "dependencies": {

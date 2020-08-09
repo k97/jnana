@@ -1,7 +1,7 @@
 import { Layout, Container, Row } from '../components/Layout/index'
 import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
-import Header from '../components/header'
+
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
@@ -20,7 +20,6 @@ const Recordings = ({ allPosts }: Props) => {
         <Head>
           <title>Next.js Blog Example with {CMS_NAME}</title>
         </Head>
-        <Header />
         <Container>
           <Row>
             <div className="col-12">
