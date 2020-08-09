@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-import Header from '../components/header'
 import { Layout, Container, Row } from '../components/Layout/index'
+
+import HeroText from '../components/Hero/text';
+
 
 import { CMS_NAME } from '../lib/constants'
 
@@ -12,18 +14,11 @@ const Index = () => {
     <>
       <Layout>
         <Head>
-          <title>Homepage - {CMS_NAME}</title>
+          <title>{CMS_NAME}</title>
         </Head>
-        <Header />
         <Container>
           <Row>
-            <div className="col-12">
-              <strong>Hello! I am</strong>
-              <h1>Karthik</h1>
-              <p className="x-large">
-                Designer based in Melbourne, who likes to code, create experienes that makes people’s lives easier.</p>
-              <p className="x-large">See few of my selective work here, or I record things that I find interesting <Link href="/recordings">here</Link>.</p>
-            </div>
+            <HeroText />
           </Row>
         </Container>
       </Layout>

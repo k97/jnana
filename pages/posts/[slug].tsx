@@ -24,7 +24,6 @@ const Post = ({ post, morePosts, preview }: Props) => {
   }
   return (
     <Layout preview={preview}>
-      <Header />
       <Container>
         <Row>
           <div className="col-12">
