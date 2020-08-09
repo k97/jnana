@@ -15,6 +15,9 @@
     margin:0 1.2rem;
     opacity: 0.5;
     transition: all 0.25s linear;
+    @media screen and (prefers-color-scheme: dark) {
+      filter: invert(1);
+    }
     &:hover {
       opacity: 1.0;
     }
