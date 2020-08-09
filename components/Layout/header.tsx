@@ -1,6 +1,5 @@
 import Link from 'next/link'
-
-import { Container, Row } from './Layout/index';
+import { Container, Row } from './index';
 
 const Header = () => {
   return (

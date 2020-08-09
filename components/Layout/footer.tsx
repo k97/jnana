@@ -1,11 +1,11 @@
 import Link from 'next/link'
-import { Container, Row } from './Layout/index'
+import { Container, Row } from './index'
 
 const Footer = () => {
   return (
     <Container>
       <Row>
-        <div className="col-4">
+        <section className="col-4">
           <strong className="label">contact</strong>
           <div className="social-icon-wrapper">
             <Link href="/">
@@ -21,13 +21,8 @@ const Footer = () => {
               <img src="/assets/linkedin-icon.svg" />
             </Link>
           </div>
-          <span className="label">Copyright &copy; 2020. No Tracking</span>
-          <p>
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-          </p>
-        </div>
+          <span className="small-text">Copyright &copy; 2020. No Tracking</span>
+        </section>
       </Row>
     </Container>
   )
