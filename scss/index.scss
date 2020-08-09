@@ -29,5 +29,14 @@ body {
     cursor: pointer;
     width: 2.0rem;
     margin: 1.0rem 1.2rem 2.0rem 0;
+    opacity: 0.65;
+    transition: all 0.25s linear;
+    @media screen and (prefers-color-scheme: dark) {
+      opacity: 0.55;
+      filter: invert(1);
+    }
+    &:hover {
+      opacity: 1;
+    }
   }
 }
