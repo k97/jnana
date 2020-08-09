@@ -3,8 +3,8 @@
   "version": "8.0.0",
   "scripts": {
     "build": "next build",
-    "start": "next --port=9797",
-    "start-og": "next start",
+    "dev": "next --port=9797",
+    "start": "next start",
     "typecheck": "tsc"
   },
   "dependencies": {
