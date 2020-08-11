@@ -4,6 +4,7 @@ import { CMS_NAME, HOME_OG_IMAGE_URL } from '../../lib/constants'
 const Meta = () => {
   return (
     <Head>
+      <meta name="google-site-verification" content="8OLExMes5srC_J0gow9IorjUOUD3smQxKkNNNJhci-A" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
