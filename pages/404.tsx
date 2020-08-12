@@ -14,7 +14,7 @@ export default function NotFound() {
             <a>Go to Homepage</a>
           </Link>
         </p>
-        <iframe src="https://giphy.com/embed/mq5y2jHRCAqMo" width="480" height="480" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+        <iframe src="https://giphy.com/embed/11PVuEm7Osdjoc" width="480" height="480" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
       </section>
     </>
   )

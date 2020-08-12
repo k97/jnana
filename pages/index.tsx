@@ -12,16 +12,18 @@ const Index = () => {
 
   return (
     <>
-      <Layout>
-        <Head>
-          <title>{CMS_NAME}</title>
-        </Head>
-        <Container>
-          <Row>
-            <HeroText />
-          </Row>
-        </Container>
-      </Layout>
+      <div className="homepage">
+        <Layout>
+          <Head>
+            <title>{CMS_NAME}</title>
+          </Head>
+          <Container>
+            <Row>
+              <HeroText />
+            </Row>
+          </Container>
+        </Layout>
+      </div>
     </>
   )
 }

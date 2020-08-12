@@ -13,11 +13,14 @@
 
   --textColor :rgba(255, 255, 255, 0.85);
 
+
+  --heroHeader: #ece4e0;
+
 }
 
 @media screen and (prefers-color-scheme: light) {
   :root {
-    --bodyBackground: #f7f8fb;
+    --bodyBackground: #FCE7DD;
     --bodyColor: #3b3b3b;
     --linkColor: #397ED3;
     --linkHoverColor: #f7f8fb;
@@ -25,6 +28,8 @@
 
 
     --textColor: rgba(0, 0, 0, 0.88);
+
+    --heroHeader: #3A4248;
   }
 
 }

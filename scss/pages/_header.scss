@@ -1,0 +1,35 @@
+.logo {
+  cursor: pointer;
+  opacity: 0.40;
+  transition: opacity 0.5s ease-in-out;
+
+  @media screen and (prefers-color-scheme: dark) {
+    filter: invert(1);
+  }
+
+  &:hover {
+    opacity: 1.0;
+  }
+}
+
+.jnana-header {
+  padding: 40px 0;
+}
+
+
+.jnana-menulist {
+  margin: 0;
+  padding: 0;
+  float: right;
+
+  li {
+    display: inline;
+
+    a {
+      text-decoration: none;
+      margin: 0 1.0rem;
+      background-position: unset;
+      color: var(--heroHeader);
+    }
+  }
+}
