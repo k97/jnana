@@ -13,7 +13,7 @@ const HeroText = () => {
           <img src="/assets/next.svg" className="arrow-icon d-inline-block align-middle" />
         </Link>
         </p>
-        <p className="p-normal">See few of my selective <Link href="/work">work here</Link>, or If you want to read some interesting collation of <Link href="/recordings">articles here</Link>.</p>
+        <p className="p-normal">See few of my selective <Link href="/work">work here</Link>, or If you want to read some interesting collation of <Link href="/articles">articles here</Link>.</p>
       </div>
       <div className="col-7">
         <img src="/assets/hero.svg" className="hero-static" />
