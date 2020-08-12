@@ -15,7 +15,7 @@ const Recordings = ({ allPosts }: Props) => {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
   return (
-    <>
+    <div className="articles-page">
       <Layout>
         <Head>
           <title>Next.js Blog Example with {CMS_NAME}</title>
@@ -37,7 +37,7 @@ const Recordings = ({ allPosts }: Props) => {
           </Row>
         </Container>
       </Layout>
-    </>
+    </div>
   )
 }
 

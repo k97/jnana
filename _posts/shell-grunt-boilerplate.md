@@ -1,13 +1,13 @@
 ---
 title: 'Shell-Grunt Boilerplate'
 excerpt: 'Shell contains all the basic things that are need to jumpstart a project without dealing with bootstrapping. I have forked the h5bp repo to make things easier for the app structure.'
-coverImage: '/assets/blog/preview/cover.jpg'
+coverImage: '/assets/blog/shell-grunt/cover.png'
 date: '2014-05-05'
 author:
   name: Karthik
   picture: '/assets/blog/authors/joe.jpeg'
 ogImage:
-  url: '/assets/blog/preview/cover.jpg'
+  url: '/assets/blog/shell-grunt/cover.png'
 ---
 
 [NPM](https://www.npmjs.com/) is a powerful asset when it comes to managing dependencies and running tasks while working on app development. I have used [Yeoman](http://yeoman.io/) and pre-configured apps in the past which usually has the setups done and it was easier for me and my team to pull the code from the repos and get going without much fuss. After awhile, I wanted to setup my own configuration, a little something that can be used or referenced to jump start the whole setup process while beginning a new project.
