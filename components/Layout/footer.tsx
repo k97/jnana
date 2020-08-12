@@ -8,18 +8,18 @@ const Footer = () => {
         <section className="col-4">
           <strong className="label">contact</strong>
           <div className="social-icon-wrapper">
-            <Link href="/">
+            <a href="https://github.com/k97" target="_blank">
               <img src="/assets/github-icon.svg" />
-            </Link>
-            <Link href="/">
+            </a>
+            <a href="https://twitter.com/k97co" target="_blank">
               <img src="/assets/twitter-icon.svg" />
-            </Link>
-            <Link href="/">
+            </a>
+            <a href="mailto:karthik97live@gmail.com?subject=Hello Karthik!">
               <img src="/assets/mail-icon.svg" />
-            </Link>
-            <Link href="/">
+            </a>
+            <a href="https://www.linkedin.com/in/rajendrankarthikeyan" target="_blank">
               <img src="/assets/linkedin-icon.svg" />
-            </Link>
+            </a>
           </div>
           <span className="small-text">Copyright &copy; 2020. No Tracking</span>
         </section>

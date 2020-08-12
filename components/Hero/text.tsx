@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const HeroText = () => {
   return (
-    <section className="homepage">
+    <section className="homepage-content">
       <div className="col-5">
         <strong >Hello! I am</strong>
         <h1 className="ff-hero">Karthik</h1>
@@ -13,9 +13,11 @@ const HeroText = () => {
           <img src="/assets/next.svg" className="arrow-icon d-inline-block align-middle" />
         </Link>
         </p>
-        <p className="p-normal">See few of my selective work here, or I record things that I find interesting <Link href="/recordings">here</Link>.</p>
+        <p className="p-normal">See few of my selective <Link href="/work">work here</Link>, or If you want to read some interesting collation of <Link href="/recordings">articles here</Link>.</p>
       </div>
-
+      <div className="col-7">
+        <img src="/assets/hero.svg" className="hero-static" />
+      </div>
 
     </section>
   )
