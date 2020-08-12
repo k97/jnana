@@ -8,7 +8,7 @@ const Meta = () => {
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="/favicon/apple-touch-icon.png"
+        href="/favicon_io/apple-touch-icon.png"
       />
       <link
         rel="icon"
@@ -20,23 +20,24 @@ const Meta = () => {
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="/favicon/favicon-16x16.png"
+        href="/favicon_io/favicon-16x16.png"
       />
-      <link rel="manifest" href="/favicon/site.webmanifest" />
+      <link rel="manifest" href="/favicon_io/site.webmanifest" />
+      <link rel="shortcut icon" href="/favicon_io/favicon.ico" />
+      <meta
+        name="description"
+        content={`Hello! I’m Karthik — a designer working on products that bridge the gap between the software and people.`}
+      />
+
+      <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
+      <meta name="msapplication-TileColor" content="#000000" />
       <link
         rel="mask-icon"
         href="/favicon/safari-pinned-tab.svg"
         color="#000000"
       />
-      <link rel="shortcut icon" href="/favicon/favicon.ico" />
-      <meta name="msapplication-TileColor" content="#000000" />
-      <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <meta
-        name="description"
-        content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
-      />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>
   )
