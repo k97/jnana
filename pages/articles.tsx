@@ -18,7 +18,7 @@ const Recordings = ({ allPosts }: Props) => {
     <div className="articles-page">
       <Layout>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>Artciles - {CMS_NAME}</title>
         </Head>
         <Container>
           <Row>
