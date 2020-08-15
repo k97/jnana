@@ -18,6 +18,7 @@
     "remark": "11.0.2",
     "remark-html": "10.0.0",
     "sass": "1.26.3",
+    "medium-zoom": "1.0.4",
     "typescript": "^3.9.2"
   },
   "devDependencies": {

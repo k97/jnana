@@ -1,5 +1,18 @@
+.articles-page-body {
+  margin-top: -40px;
+}
+
 .articles-page {
   .article-cover a {
     background-position: unset;
+  }
+  h1 {
+    margin: 2.5rem 0 1.0rem;
+  }
+}
+
+.articles-content {
+  h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fontBoldFamily);
   }
 }

@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <>
       <section className="text-center">
-        <h1 className="ff-hero">404 Not Found</h1>
+        <h1 className="ff-head">404 Not Found</h1>
         <p className="small-text">
           Personal projects are hard to juggle with day jobs and I'm trying my best to fit in all the pages soon, please check again later.
         </p>

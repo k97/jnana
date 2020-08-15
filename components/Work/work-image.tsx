@@ -7,7 +7,7 @@ type Props = {
   slug?: string
 }
 
-const CoverImage = ({ title, src, slug }: Props) => {
+const WorkImage = ({ title, src, slug }: Props) => {
   const image = (
     <img
       src={src}
@@ -18,9 +18,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
   return (
     <div className="">
       {slug ? (
-        <Link as={`/articles/${slug}`} href="/articles/[slug]">
-          <a aria-label={title} className="no-bg">{image}</a>
-        </Link>
+        <a aria-label={title} className="no-bg">{image}</a>
       ) : (
         image
       )}
@@ -28,4 +26,4 @@ const CoverImage = ({ title, src, slug }: Props) => {
   )
 }
 
-export default CoverImage
+export default WorkImage

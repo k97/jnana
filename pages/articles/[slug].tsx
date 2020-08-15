@@ -23,33 +23,35 @@ const Post = ({ post, morePosts, preview }: Props) => {
   }
   return (
     <Layout preview={preview}>
-      <Container>
-        <Row>
-          <div className="col-12">
-            {router.isFallback ? (
-              <PostTitle>Loading…</PostTitle>
-            ) : (
-                <>
-                  <article className="mb-32">
-                    <Head>
-                      <title>
-                        {post.title} | {CMS_NAME}
-                      </title>
-                      <meta property="og:image" content={post.ogImage.url} />
-                    </Head>
-                    <PostHeader
-                      title={post.title}
-                      coverImage={post.coverImage}
-                      date={post.date}
-                      author={post.author}
-                    />
-                    <PostBody content={post.content} />
-                  </article>
-                </>
-              )}
-          </div>
-        </Row>
-      </Container>
+      <Head>
+        <title>
+          {post.title} | {CMS_NAME}
+        </title>
+        <meta property="og:image" content={post.ogImage.url} />
+      </Head>
+      <section className="articles-page-body">
+        <Container>
+          <Row>
+            <div className="col-12">
+              {router.isFallback
+                ? (<PostTitle>Loading…</PostTitle>)
+                : (
+                  <>
+                    <article className="">
+                      <PostHeader
+                        title={post.title}
+                        coverImage={post.coverImage}
+                        date={post.date}
+                        author={post.author}
+                      />
+                      <PostBody content={post.content} />
+                    </article>
+                  </>
+                )}
+            </div>
+          </Row>
+        </Container>
+      </section>
     </Layout>
   )
 }
