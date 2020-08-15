@@ -1,0 +1,50 @@
+.work-page-body {
+  margin-top: -40px;
+}
+
+.work-card {
+  background-color: var(--workCardBackground);
+  border-radius: 1.0rem;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+  padding: 0;
+  margin: 0;
+
+  h3 {
+    padding: 1.0rem 2.0rem;
+    font-family: var(--fontBoldFamily);
+  }
+
+  p {
+    margin: 0;
+    padding: 1.0rem 2.0rem 1.75rem;
+  }
+
+  &:hover {
+    background-color: var(--workCardHoverBackground);
+  }
+}
+
+
+.work-content {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--fontBoldFamily);
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  p {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

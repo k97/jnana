@@ -13,8 +13,10 @@
 
   --textColor :rgba(255, 255, 255, 0.85);
 
-
   --heroHeader: #ece4e0;
+
+  --workCardBackground: #2d2d2d;
+  --workCardHoverBackground: #4f4f4f;
 
 }
 
@@ -30,6 +32,10 @@
     --textColor: rgba(0, 0, 0, 0.88);
 
     --heroHeader: #3A4248;
+
+
+    --workCardBackground: #fff8f4;
+    --workCardHoverBackground: #fff;
   }
 
 }

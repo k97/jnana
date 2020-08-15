@@ -1,8 +1,15 @@
 .ff-hero {
   font-family: var(--fontHeaderFamily);
 }
-.ff-head {
+.ff-head, strong {
   font-family: var(--fontBoldFamily);
+}
+
+a.no-bg {
+  background-position: unset;
+  // &:hover {
+  //   background-position: unset;
+  // }
 }
 
 h1 {
