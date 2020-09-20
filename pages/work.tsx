@@ -21,7 +21,14 @@ const Work = ({ allWork }: Props) => {
         <div className="work-page-body">
           <Container>
             <Row>
-              <div className="col-12"><h1 className="ff-head m-0">Selective Projects</h1></div>
+              <div className="col-12">
+                <h1 className="ff-head m-0">Selective Projects</h1>
+                <div className="update-banner">
+                  <strong>Update: </strong>
+                  Personal projects are hard to juggle with day jobs and I'm trying my best to fit in all my projects soon, please check again later.
+                </div>
+
+              </div>
               {allWork.map((work: any) => (
                 <WorkPreview
                   key={work.slug}
