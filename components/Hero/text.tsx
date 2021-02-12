@@ -7,7 +7,7 @@ const HeroText = () => {
         <strong >Hello! I am</strong>
         <h1 className="ff-hero">Karthik</h1>
 
-        <p className="p-large">Designer based in Melbourne, who likes to code, create experienes that makes people’s lives easier.
+        <p className="p-large">Designer based in Melbourne, who likes to code, create experiences that makes people’s lives easier.
 
           <Link href="/about">
             <img src="/assets/next.svg" className="arrow-icon d-inline-block align-middle" />
