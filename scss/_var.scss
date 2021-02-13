@@ -19,14 +19,15 @@
 
   --updateBannerBg: rgba(0, 0, 0, 0.35);
 
+  --articleBorderColor: rgba(0, 0, 0, 0.12);
+  --articleHeader: #c3deff;
 
 
 }
 
 @media screen and (prefers-color-scheme: light) {
   :root {
-
-    --bodyBackground: rgba(255, 255, 255, 0.72);
+--bodyBackground: rgba(255, 255, 255, 0.72);
 
     --bodyColor: #3b3b3b;
     --linkColor: #397ED3;
@@ -37,12 +38,15 @@
     --textColor: rgba(0, 0, 0, 0.88);
 
     --heroHeader: #3A4248;
-
+    --menuColor: #52363a;
 
     --workCardBackground: #fff8f4;
     --workCardHoverBackground: #fff;
 
     --updateBannerBg: rgba(255, 255, 255, 0.45);
+
+    --articleBorderColor: rgba(0, 0, 0, 0.05);
+    --articleHeader: #687686;
 
   }
 

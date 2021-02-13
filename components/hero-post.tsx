@@ -23,10 +23,10 @@ const HeroPost = ({
 }: Props) => {
   return (
     <section>
-      <div className="article-cover">
-        { coverImage && <CoverImage title={title} src={coverImage} slug={slug} /> }
+      <div className="article-cover ">
+        {coverImage && <CoverImage title={title} src={coverImage} slug={slug} />}
       </div>
-      <div className="">
+      <div className="article-list-item">
         <div>
           <h3 className="mb-1">
             <Link as={`/articles/${slug}`} href="/articles/[slug]">

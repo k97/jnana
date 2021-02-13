@@ -33,7 +33,7 @@ const work = ({ work }: Props) => {
                 ? (<h1 className="text-center ff-head mb-1">Loading…</h1>)
                 : (
                   <>
-                    <h1 className="text-center ff-head mb-1">{work.title}</h1>
+                    <h1 className="text-center ff-head mt-0 mb-4">{work.title}</h1>
                     <div className="work-content" dangerouslySetInnerHTML={{ __html: work.content }} />
                   </>
                 )

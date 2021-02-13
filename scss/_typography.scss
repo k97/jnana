@@ -53,9 +53,23 @@ pre {
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 0;
+
+
+  padding: 1.0rem 2.0rem;
+  background-color: var(--updateBannerBg);
+  border-radius: 20px;
 }
 
 a {
+  text-decoration: none;
+}
+
+.applink,
+.homepage-content a,
+.work-content a,
+.articles-content a,
+.about-content a,
+.article-body a {
   text-decoration: none;
   transition: all 0.3s ease;
   color: var(--linkColor);
