@@ -1,20 +1,4 @@
-@font-face {
-  font-family: "Header Extra Bold";
-  src: url("/assets/fonts/headerextrabold.woff2") format("woff2"),
-    url("/assets/fonts/headerextrabold.woff") format("woff"),
-    url("/assets/fonts/headerextrabold.otf") format("opentype");
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Header Bold";
-  src: url("/assets/fonts/headerbold.woff2") format("woff2"),
-    url("/assets/fonts/headerbold.woff") format("woff"),
-    url("/assets/fonts/headerbold.otf") format("opentype");
-  font-style: normal;
-  font-weight: 400;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
 
 @font-face {
   font-family: "Karla Bold";

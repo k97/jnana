@@ -12,7 +12,7 @@
 
   h3 {
     padding: 1.0rem 2.0rem;
-    font-family: var(--fontBoldFamily);
+    font-family: var(--fontHeaderFamily);
   }
 
   p {
@@ -34,14 +34,16 @@
   h4,
   h5,
   h6 {
-    font-family: var(--fontBoldFamily);
+    font-family: var(--fontHeaderFamily);
     margin-bottom: 0;
     padding-bottom: 0;
   }
+
   p {
     margin-top: 0;
     padding-top: 0;
   }
+
   img {
     display: block;
     text-align: center;
@@ -53,8 +55,9 @@
 .update-banner {
   margin: 1.5rem 0 0;
   padding: 1.0rem 2.0rem;
-  background-color: rgba(0, 0, 0, 0.06);
+  background-color: var(--updateBannerBg);
   border-radius: 20px;
+
   strong {
     display: block;
   }

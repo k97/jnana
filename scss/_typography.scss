@@ -1,8 +1,10 @@
 .ff-hero {
   font-family: var(--fontHeaderFamily);
 }
-.ff-head, strong {
-  font-family: var(--fontBoldFamily);
+
+.ff-head,
+strong {
+  font-family: var(--fontHeaderFamily);
 }
 
 a.no-bg {
@@ -14,21 +16,21 @@ a.no-bg {
 
 h1 {
   font-size: 2.75rem;
-  font-weight: bolder;
+  font-weight: 700;
   line-height: 1.4;
   margin-top: 44px;
 }
 
 h2 {
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.75;
 }
 
 
 h3 {
   font-size: 1.75rem;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.75;
 }
 
@@ -40,9 +42,11 @@ li {
   line-height: 1.6;
   color: var(--textColor)
 }
+
 .small-text {
   font-size: 1.25rem;
 }
+
 pre {
   font-family: var(--monoFontFamily);
   font-size: 1.4rem;
@@ -78,5 +82,3 @@ strong {
   font-weight: 600;
   text-transform: uppercase;
 }
-
-
