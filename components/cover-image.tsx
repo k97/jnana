@@ -12,7 +12,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
     <img
       src={src}
       alt={`Cover Image for ${title}`}
-      className="article-cover-img"
+      className="article-cover-img "
     />
   )
   return (
@@ -22,8 +22,8 @@ const CoverImage = ({ title, src, slug }: Props) => {
           <a aria-label={title} className="no-bg">{image}</a>
         </Link>
       ) : (
-        image
-      )}
+          image
+        )}
     </div>
   )
 }

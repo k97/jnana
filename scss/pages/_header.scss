@@ -12,12 +12,12 @@
   }
 }
 
-.jnana-header {
+.app-header {
   padding: 40px 0;
 }
 
 
-.jnana-menulist {
+.app-menulist {
   margin: 0;
   padding: 0;
   float: right;
@@ -26,10 +26,13 @@
     display: inline;
 
     a {
+      font-size: 1.2rem;
       text-decoration: none;
       margin: 0 1.20rem;
+      letter-spacing: -0.35px;
       background-position: unset;
-      color: var(--heroHeader);
+      color: var(--menuColor);
+      font-family: var(--fontHeaderFamily);
     }
   }
 }
