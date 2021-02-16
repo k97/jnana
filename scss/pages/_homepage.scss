@@ -13,12 +13,17 @@
 
   p {
     margin-top: 0;
-    margin-bottom: 2.25rem;
+    margin-bottom: 2.0rem;
   }
 
   .p-large {
     font-size: 1.75rem;
     margin: 0.75rem 0 2.25rem;
+  }
+
+  .btn {
+    display: inline-block;
+    margin: 0 0 2.0rem;
   }
 
   .arrow-icon {

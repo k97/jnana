@@ -95,3 +95,20 @@ strong {
   font-weight: 600;
   text-transform: uppercase;
 }
+
+button,
+a.btn,
+.btn {
+  padding: 0.25rem 1.5rem;
+  border: 0.5rem solid var(--linkColor);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  background: var(--linkColor);
+  color: var(--linkHoverColor);
+  transition: all 0.5s linear;
+
+  &:hover {
+    // background-color: darkr;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  }
+}
