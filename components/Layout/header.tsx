@@ -1,26 +1,46 @@
 import Link from 'next/link'
-import { Container, Row } from './index';
+import { useState, useEffect } from "react";
+import { Container, Flex, Box, Text, Spacer, UnlockIcon } from "@chakra-ui/react"
+import { signOut, useSession } from 'next-auth/client';
 
 const Header = () => {
+
+  const [session, loading]: any = useSession();
+
+
   return (
-    <div className="app-header">
-      <Container>
-        <Row>
-          <div className="col-3 col-4-sm">
-            <Link href="/">
-              <img src="/assets/logo.svg" alt="K97 Logo" className="logo" />
-            </Link>
-          </div>
-          <div className="col-9 col-8-sm">
-            <ul className="app-menulist">
-              <li className="app-menulist--about"><Link href="/about">About</Link></li>
-              <li className="app-menulist--work"><Link href="/work">Work</Link></li>
-              <li className="app-menulist--line"><Link href="/articles">Articles</Link></li>
-            </ul>
-          </div>
-        </Row>
-      </Container>
-    </div>
+    <Container>
+      <Flex>
+        <Box p="2">
+          <Link href="/">
+            <img src="/assets/logo.svg" alt="K97 Logo" className="logo" />
+          </Link>
+        </Box>
+        <Spacer />
+        <Box mr="4">
+          <Link href="/about" >
+            <Text>About</Text>
+          </Link>
+        </Box>
+        <Box mr="4">
+          <Link href="/work" >
+            <Text>Work</Text></Link>
+        </Box>
+        <Box mr="4">
+          <Link href="/articles" >
+            <Text>Articles</Text></Link>
+        </Box>
+        {session && (
+          <Box mr="4">
+            <Text onClick={signOut} >Lock Projects</Text>
+          </Box>
+        )}
+        <Box mr="4">
+          <Link href="/articles" >
+            <Text>Darkmode</Text></Link>
+        </Box>
+      </Flex>
+    </Container >
   )
 }
 

@@ -1,5 +1,6 @@
 import PostPreview from './post-preview'
 import Post from '../types/post'
+import { Heading, Text } from '@chakra-ui/react';
 
 type Props = {
   posts: Post[]
@@ -7,24 +8,22 @@ type Props = {
 
 const MoreStories = ({ posts }: Props) => {
   return (
-    <section>
-      <h3 className="ff-head pt-0">
+    <>
+      <Heading as="h3" mt="10" mb="4">
         Previous Articles
-      </h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-32">
-        {posts.map((post) => (
-          <PostPreview
-            key={post.slug}
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            author={post.author}
-            slug={post.slug}
-            excerpt={post.excerpt}
-          />
-        ))}
-      </div>
-    </section>
+      </Heading>
+      {posts.map((post) => (
+        <PostPreview
+          key={post.slug}
+          title={post.title}
+          coverImage={post.coverImage}
+          date={post.date}
+          author={post.author}
+          slug={post.slug}
+          excerpt={post.excerpt}
+        />
+      ))}
+    </>
   )
 }
 

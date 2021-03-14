@@ -1,28 +1,26 @@
 import Link from 'next/link'
+import { Button, Heading, Text, Grid, GridItem, Box } from "@chakra-ui/react"
 
 const HeroText = () => {
   return (
-    <section className="homepage-content">
-      <div className="col-5">
-        <strong >Hello! I am</strong>
-        <h1 className="ff-hero">Karthik</h1>
+    <Grid columns={2}
+      templateColumns="repeat(12, 1fr)">
+      <GridItem colSpan={5}>
 
-        <p className="p-large">Designer based in Melbourne, who likes to code, create experiences that makes people’s lives easier.</p>
+        <strong>Hello! I am</strong>
+        <Heading as="h1" size="4xl" className="ff-hero">Karthik</Heading>
+
+        <Text fontSize="lg">Designer based in Melbourne, who likes to code, create experiences that makes people’s lives easier.</Text>
 
         <Link href="/about">
-          <a className="btn">More about me</a>
+          <Button size="lg" colorScheme="blue">More about me</Button>
         </Link>
 
-        <p className="p-normal">
-          See few of my selective <Link href="/work"><a>work here</a></Link>,
-          or If you want to read some interesting collation of <Link href="/articles"><a>articles here</a></Link>.</p>
-      </div>
-
-      <div className="col-7">
-        <img src="/assets/hero.svg" className="hero-static" />
-      </div>
-
-    </section>
+        <Text fontSize="sm">See few of my selective <Link href="/work"><a>work here</a></Link>, or If you want to read some interesting collation of <Link href="/articles"><a>articles here</a></Link>.</Text>
+      </GridItem>
+      <GridItem colSpan={7} ><img src="/assets/hero.svg" className="hero-static" />
+      </GridItem>
+    </Grid>
   )
 }
 

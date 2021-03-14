@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import WorkImage from './work-image'
-
+import { Heading, LinkBox, LinkOverlay, Text, Image, GridItem } from "@chakra-ui/react"
 type Props = {
   title: string
   coverImage: string
@@ -15,17 +15,20 @@ const WorkPreview = ({
   slug,
 }: Props) => {
   return (
-    <section className="col-6">
-      <Link as={`/work/${slug}`} href="/work/[slug]">
-        <div className="work-card">
-          <h3 className="m-0">{title}</h3>
-          <div className="cover-image-wrapper text-center">
-            {coverImage && <img src={coverImage} alt={`Cover Image for ${title}`} />}
-          </div>
-          <p>{excerpt}</p>
-        </div>
-      </Link>
-    </section>
+    <Link as={`/work/${slug}`} href="/work/[slug]">
+      <GridItem colSpan={6}>
+        <LinkBox as="article" p="5" borderWidth="1px" shadow="sm" rounded="md">
+          <Heading size="md" my="2">
+            <LinkOverlay>
+              {title}
+            </LinkOverlay>
+          </Heading>
+          {coverImage && <Image src={coverImage} alt={`Cover Image for ${title}`} />}
+          <Text fontSize="md">{excerpt}</Text>
+        </LinkBox>
+      </GridItem>
+
+    </Link>
   )
 }
 

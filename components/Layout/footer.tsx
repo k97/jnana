@@ -1,32 +1,35 @@
 import Link from 'next/link'
-import { Container, Row } from './index'
+import { Container, SimpleGrid, Box, Text } from "@chakra-ui/react"
 
 const Footer = () => {
 
   const yearVal = new Date().getFullYear();
   return (
-    <Container>
-      <Row>
-        <section className="col-4">
-          <strong className="label">contact</strong>
-          <div className="social-icon-wrapper">
-            <a href="https://twitter.com/k97co" target="_blank">
-              <img src="/assets/twitter-icon.svg" />
-            </a>
-            <a href="mailto:karthik97live@gmail.com?subject=Hello Karthik!">
-              <img src="/assets/mail-icon.svg" />
-            </a>
-            <a href="https://github.com/k97" target="_blank">
-              <img src="/assets/github-icon.svg" />
-            </a>
-            <a href="https://www.linkedin.com/in/rajendrankarthikeyan" target="_blank">
-              <img src="/assets/linkedin-icon.svg" />
-            </a>
-          </div>
-          <span className="small-text">Copyrights &copy; {yearVal}. No Tracking</span>
-        </section>
-      </Row>
-    </Container>
+    <Container mt="100">
+      <SimpleGrid columns={5} spacing={0} className="social-icon-wrapper">
+        <Box>
+          <a href="https://twitter.com/k97co" target="_blank">
+            <img src="/assets/twitter-icon.svg" />
+          </a>
+        </Box>
+        <Box>
+          <a href="mailto:karthik97live@gmail.com?subject=Hello Karthik!">
+            <img src="/assets/mail-icon.svg" />
+          </a>
+        </Box>
+        <Box>
+          <a href="https://github.com/k97" target="_blank">
+            <img src="/assets/github-icon.svg" />
+          </a>
+        </Box>
+        <Box>
+          <a href="https://www.linkedin.com/in/rajendrankarthikeyan" target="_blank">
+            <img src="/assets/linkedin-icon.svg" />
+          </a>
+        </Box>
+      </SimpleGrid>
+      <Text fontSize="sm" mt="5">Copyrights &copy; {yearVal}. No Tracking</Text>
+    </Container >
   )
 }
 
