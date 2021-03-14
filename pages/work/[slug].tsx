@@ -1,12 +1,16 @@
 import { useRouter } from 'next/router'
+import { useState, useEffect } from "react";
+import { signIn, signOut, useSession, getSession, csrfToken } from 'next-auth/client';
 import Head from 'next/head'
 import ErrorPage from 'next/error'
+
+import { Center, CircularProgress, Container, Heading, Text } from "@chakra-ui/react"
 
 import { getWorkBySlug, getAllWork } from '../../lib/work-api'
 import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 
-import { Layout, Container, Row } from '../../components/Layout/index'
+import { Layout } from '../../components/Layout/index'
 
 type Props = {
   work: any
@@ -14,9 +18,22 @@ type Props = {
 
 const work = ({ work }: Props) => {
   const router = useRouter()
+  const [session, loading]: any = useSession()
+
   if (!router.isFallback && !work?.slug) {
     return <ErrorPage statusCode={404} />
   }
+
+  useEffect(() => {
+    const showLockScreen = async () => {
+      const session = await getSession();
+      if (!session) {
+        signIn()
+      }
+    };
+    showLockScreen();
+  });
+
   return (
     <Layout>
       <Head>
@@ -25,24 +42,24 @@ const work = ({ work }: Props) => {
         </title>
         <meta property="og:image" content={work.ogImage.url} />
       </Head>
-      <section className="work-page-body">
-        <Container>
-          <Row>
-            <div className="col-12">
-              {router.isFallback
-                ? (<h1 className="text-center ff-head mb-1">Loading…</h1>)
-                : (
-                  <>
-                    <h1 className="text-center ff-head mt-0 mb-4">{work.title}</h1>
-                    <div className="work-content" dangerouslySetInnerHTML={{ __html: work.content }} />
-                  </>
-                )
-              }
-            </div>
-          </Row>
-        </Container>
-      </section>
-    </Layout>
+
+      <Container maxW="container.xl">
+        {router.isFallback
+          ? (<CircularProgress size="100px" thickness="4px" isIndeterminate />)
+          : (
+            (work.author.private && !session) ? (
+              <Center h="400px"><CircularProgress size="100px" thickness="4px" isIndeterminate /></Center>
+            ) : (
+              <>
+                <Center h="200px"><Heading fontSize="4xl" fontWeight="900">{work.title}</Heading></Center>
+                <Text fontSize="2xl" className="work-content" dangerouslySetInnerHTML={{ __html: work.content }} />
+              </>
+            )
+          )
+        }
+
+      </Container>
+    </Layout >
   )
 }
 
@@ -91,3 +108,4 @@ export async function getStaticPaths() {
     fallback: false,
   }
 }
+

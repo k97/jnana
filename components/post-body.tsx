@@ -1,15 +1,18 @@
+
+import { Text } from "@chakra-ui/react"
+
 type Props = {
   content: string
 }
 
 const PostBody = ({ content }: Props) => {
   return (
-    <div className="max-w-2xl mx-auto">
+    <Text fontSize="2xl" mt="50">
       <div
-        className="articles-content"
+        className="work-content"
         dangerouslySetInnerHTML={{ __html: content }}
       />
-    </div>
+    </Text>
   )
 }
 

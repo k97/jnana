@@ -1,38 +1,23 @@
-.logo {
-  cursor: pointer;
-  opacity: 0.75;
-  transition: opacity 0.5s ease-in-out;
+.header-background {
+  backdrop-filter: saturate(180%) blur(50px);
+  // position: fixed;
+  z-index: 100;
 
-  @media screen and (prefers-color-scheme: dark) {
-    filter: invert(1);
+  .logo,
+  .chakra-text {
+    cursor: pointer;
   }
 
-  &:hover {
-    opacity: 1.0;
-  }
-}
+  .logo {
+    opacity: 0.75;
+    transition: opacity 0.5s ease-in-out;
 
-.app-header {
-  padding: 40px 0;
-}
+    @media screen and (prefers-color-scheme: dark) {
+      filter: invert(1);
+    }
 
-
-.app-menulist {
-  margin: 0;
-  padding: 0;
-  float: right;
-
-  li {
-    display: inline;
-
-    a {
-      font-size: 1.2rem;
-      text-decoration: none;
-      margin: 0 1.20rem;
-      letter-spacing: -0.35px;
-      background-position: unset;
-      color: var(--menuColor);
-      font-family: var(--fontHeaderFamily);
+    &:hover {
+      opacity: 1.0;
     }
   }
 }

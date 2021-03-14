@@ -3,6 +3,7 @@ import DateFormater from './date-formater'
 import CoverImage from './cover-image'
 import Link from 'next/link'
 import Author from '../types/author'
+import { Heading, Text } from '@chakra-ui/react';
 
 type Props = {
   title: string
@@ -22,20 +23,18 @@ const PostPreview = ({
   slug,
 }: Props) => {
   return (
-    <div className="article-list-item">
-      <h3 className="mb-0">
+    <>
+      <Heading fontSize="2xl" fontWeight="600" mt="10" mb="2">
         <Link as={`/articles/${slug}`} href="/articles/[slug]">
-          <a className="no-bg">{title}</a>
+          {title}
         </Link>
-      </h3>
-      <div className="small-text">
+      </Heading>
+      <Text fontSize="lg" mb="2">
         <DateFormater dateString={date} />
-      </div>
-      <div className="mb-0">
-        {coverImage && <CoverImage slug={slug} title={title} src={coverImage} />}
-      </div>
-      <p className="mb-4">{excerpt}</p>
-    </div>
+      </Text>
+      {coverImage && <CoverImage slug={slug} title={title} src={coverImage} />}
+      <Text fontSize="2xl" mb="50">{excerpt}</Text>
+    </>
   )
 }
 

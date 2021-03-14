@@ -1,11 +1,14 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
-import { Layout, Container, Row } from '../../components/Layout/index'
+import Head from 'next/head'
+
+import { Center, CircularProgress, Container, Heading, SimpleGrid, Box, Button } from "@chakra-ui/react"
+import { Layout } from '../../components/Layout/index'
 import PostBody from '../../components/post-body'
 import PostHeader from '../../components/post-header'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
-import Head from 'next/head'
+
+import { getPostBySlug, getAllPosts } from '../../lib/api'
 import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import PostType from '../../types/post'
@@ -29,29 +32,22 @@ const Post = ({ post, morePosts, preview }: Props) => {
         </title>
         <meta property="og:image" content={post.ogImage.url} />
       </Head>
-      <section className="articles-page-body">
-        <Container>
-          <Row>
-            <div className="col-12">
-              {router.isFallback
-                ? (<PostTitle>Loading…</PostTitle>)
-                : (
-                  <>
-                    <article className="">
-                      <PostHeader
-                        title={post.title}
-                        coverImage={post.coverImage}
-                        date={post.date}
-                        author={post.author}
-                      />
-                      <PostBody content={post.content} />
-                    </article>
-                  </>
-                )}
-            </div>
-          </Row>
-        </Container>
-      </section>
+
+      <Container maxW="container.xl">
+        {router.isFallback
+          ? (<CircularProgress size="100px" thickness="4px" isIndeterminate />)
+          : (
+            <>
+              <PostHeader
+                title={post.title}
+                coverImage={post.coverImage}
+                date={post.date}
+                author={post.author}
+              />
+              <PostBody content={post.content} />
+            </>
+          )}
+      </Container>
     </Layout>
   )
 }

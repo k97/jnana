@@ -1,5 +1,6 @@
 import PostPreview from './post-preview'
 import Post from '../types/post'
+import { Heading, Text, Divider } from '@chakra-ui/react';
 
 type Props = {
   posts: Post[]
@@ -7,12 +8,12 @@ type Props = {
 
 const MoreStories = ({ posts }: Props) => {
   return (
-    <section>
-      <h3 className="ff-head pt-0">
+    <>
+      <Heading fontSize="4xl" fontWeight="800" mt="10" mb="0">
         Previous Articles
-      </h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-32">
-        {posts.map((post) => (
+      </Heading>
+      {posts.map((post) => (
+        <>
           <PostPreview
             key={post.slug}
             title={post.title}
@@ -22,9 +23,10 @@ const MoreStories = ({ posts }: Props) => {
             slug={post.slug}
             excerpt={post.excerpt}
           />
-        ))}
-      </div>
-    </section>
+          <Divider orientation="horizontal" />
+        </>
+      ))}
+    </>
   )
 }
 

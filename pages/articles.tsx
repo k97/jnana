@@ -1,6 +1,7 @@
 
 import Head from 'next/head';
-import { Layout, Container, Row } from '../components/Layout/index';
+import { Container } from "@chakra-ui/react"
+import { Layout } from '../components/Layout/index';
 import MoreStories from '../components/more-stories';
 import HeroPost from '../components/hero-post';
 
@@ -16,31 +17,25 @@ const Articles = ({ allPosts }: Props) => {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
   return (
-    <div className="articles-page">
-      <Layout>
-        <Head>
-          <title>Artciles - {CMS_NAME}</title>
-        </Head>
-        <div className="articles-page-body">
-          <Container>
-            <Row>
-              <div className="col-12">
-                {heroPost && (
-                  <HeroPost
-                    title={heroPost.title}
-                    coverImage={heroPost.coverImage}
-                    date={heroPost.date}
-                    author={heroPost.author}
-                    slug={heroPost.slug}
-                    excerpt={heroPost.excerpt}
-                  />
-                )}
-                {morePosts.length > 0 && <MoreStories posts={morePosts} />}</div>
-            </Row>
-          </Container>
-        </div>
-      </Layout>
-    </div>
+    <Layout>
+      <Head>
+        <title>Artciles - {CMS_NAME}</title>
+      </Head>
+
+      <Container maxW="container.xl">
+        {heroPost && (
+          <HeroPost
+            title={heroPost.title}
+            coverImage={heroPost.coverImage}
+            date={heroPost.date}
+            author={heroPost.author}
+            slug={heroPost.slug}
+            excerpt={heroPost.excerpt}
+          />
+        )}
+        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+      </Container>
+    </Layout >
   )
 }
 
