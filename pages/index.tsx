@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Container } from "@chakra-ui/react"
 import { Layout } from '../components/Layout/index'
 
-import HeroText from '../components/Hero/text';
+import HeroIntro from '../components/Hero/intro';
 
 import { CMS_NAME } from '../lib/constants'
 
@@ -23,15 +23,18 @@ const Index = () => {
           background-attachment: fixed;
           height: 100%;
         }
+        .header-background {
+          border: none;
+          backdrop-filter: none;
+          box-shadow: none;
+        }
       `}</style>
       <div className="homepage">
         <Layout>
           <Head>
             <title>{CMS_NAME}</title>
           </Head>
-          <Container>
-            <HeroText />
-          </Container>
+          <HeroIntro />
         </Layout>
       </div>
     </>

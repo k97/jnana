@@ -21,7 +21,8 @@ const Articles = ({ allPosts }: Props) => {
       <Head>
         <title>Artciles - {CMS_NAME}</title>
       </Head>
-      <Container>
+
+      <Container maxW="container.xl">
         {heroPost && (
           <HeroPost
             title={heroPost.title}
