@@ -32,7 +32,8 @@ const Post = ({ post, morePosts, preview }: Props) => {
         </title>
         <meta property="og:image" content={post.ogImage.url} />
       </Head>
-      <Container>
+
+      <Container maxW="container.xl">
         {router.isFallback
           ? (<CircularProgress size="100px" thickness="4px" isIndeterminate />)
           : (

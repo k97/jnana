@@ -43,8 +43,7 @@ const work = ({ work }: Props) => {
         <meta property="og:image" content={work.ogImage.url} />
       </Head>
 
-      <Container>
-
+      <Container maxW="container.xl">
         {router.isFallback
           ? (<CircularProgress size="100px" thickness="4px" isIndeterminate />)
           : (
@@ -52,8 +51,8 @@ const work = ({ work }: Props) => {
               <Center h="400px"><CircularProgress size="100px" thickness="4px" isIndeterminate /></Center>
             ) : (
               <>
-                <Center h="200px"><Heading >{work.title}</Heading></Center>
-                <Text className="work-content" dangerouslySetInnerHTML={{ __html: work.content }} />
+                <Center h="200px"><Heading fontSize="4xl" fontWeight="900">{work.title}</Heading></Center>
+                <Text fontSize="2xl" className="work-content" dangerouslySetInnerHTML={{ __html: work.content }} />
               </>
             )
           )
