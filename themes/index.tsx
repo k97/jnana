@@ -1,11 +1,19 @@
 // theme.js
 import { extendTheme } from "@chakra-ui/react"
+import { createBreakpoints } from "@chakra-ui/theme-tools";
 
 // Global style overrides
 // import styles from "./styles"
+const breakpoints = createBreakpoints({
+  sm: "320px",
+  md: "768px",
+  lg: "960px",
+  xl: "1200px",
+})
 
 
 const overrides = {
+  breakpoints,
   colors: {
     brand: {
       100: "#f00",
@@ -30,7 +38,7 @@ const overrides = {
   },
   fonts: {
     body: "'Karla', system-ui, sans-serif",
-    heading: "Inter, serif",
+    heading: "system-ui, Inter, serif",
     mono: "Menlo, monospace",
   },
   fontSizes: {
