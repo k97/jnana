@@ -2,8 +2,6 @@
 import { extendTheme } from "@chakra-ui/react"
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 
-// Global style overrides
-// import styles from "./styles"
 const breakpoints = createBreakpoints({
   sm: "320px",
   md: "768px",

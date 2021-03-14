@@ -38,7 +38,7 @@ const Header = () => {
             <Switch id="toggle-mode" />
           </FormControl>
         </Box> */}
-
+        {/*
         {session && (
           <Box mr="4" p="6" >
             <Tooltip label="Lockdown projects">
@@ -47,7 +47,7 @@ const Header = () => {
               </Text>
             </Tooltip>
           </Box>
-        )}
+        )} */}
 
       </Flex>
     </Container >
