@@ -24,16 +24,16 @@ const PostPreview = ({
 }: Props) => {
   return (
     <>
-      <Heading as="h5">
+      <Heading fontSize="2xl" fontWeight="600" mt="10" mb="2">
         <Link as={`/articles/${slug}`} href="/articles/[slug]">
           {title}
         </Link>
       </Heading>
-      <Text mb="2" fontSize="sm">
+      <Text fontSize="lg" mb="2">
         <DateFormater dateString={date} />
       </Text>
       {coverImage && <CoverImage slug={slug} title={title} src={coverImage} />}
-      <Text mb="4" fontSize="md">{excerpt}</Text>
+      <Text fontSize="2xl" mb="50">{excerpt}</Text>
     </>
   )
 }

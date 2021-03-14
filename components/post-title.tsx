@@ -7,11 +7,9 @@ type Props = {
 
 const PostTitle = ({ children }: Props) => {
   return (
-    <Center mt="100">
-      <Heading as="h2" >
-        {children}
-      </Heading>
-    </Center>
+    <Heading fontSize="4xl" fontWeight="900" >
+      {children}
+    </Heading>
   )
 }
 

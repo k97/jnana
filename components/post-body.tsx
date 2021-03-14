@@ -7,8 +7,9 @@ type Props = {
 
 const PostBody = ({ content }: Props) => {
   return (
-    <Text fontSize="sm" mt="50">
+    <Text fontSize="2xl" mt="50">
       <div
+        className="work-content"
         dangerouslySetInnerHTML={{ __html: content }}
       />
     </Text>

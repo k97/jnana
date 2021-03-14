@@ -17,14 +17,14 @@ const WorkPreview = ({
   return (
     <Link as={`/work/${slug}`} href="/work/[slug]">
       <GridItem colSpan={6}>
-        <LinkBox as="article" p="5" borderWidth="1px" shadow="sm" rounded="md">
-          <Heading size="md" my="2">
+        <LinkBox as="article" p="5" borderWidth="1px" shadow="sm" rounded="md" className="work-card">
+          <Heading fontSize="2xl" mb="3" fontWeight="600">
             <LinkOverlay>
               {title}
             </LinkOverlay>
           </Heading>
-          {coverImage && <Image src={coverImage} alt={`Cover Image for ${title}`} />}
-          <Text fontSize="md">{excerpt}</Text>
+          {coverImage && <Image src={coverImage} alt={`Cover Image for ${title}`} rounded="lg" />}
+          <Text fontSize="2xl" mt="4">{excerpt}</Text>
         </LinkBox>
       </GridItem>
 

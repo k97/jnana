@@ -27,15 +27,15 @@ const HeroPost = ({
       <div className="article-cover ">
         {coverImage && <CoverImage title={title} src={coverImage} slug={slug} />}
       </div>
-      <Heading size="md" mt="50" mb="2">
+      <Heading fontSize="3xl" fontWeight="600" mt="50" mb="2">
         <Link as={`/articles/${slug}`} href="/articles/[slug]">
           <a className="ff-head no-bg">{title}</a>
         </Link>
       </Heading>
-      <Text fontSize="sm">
+      <Text fontSize="lg" mb="2">
         <DateFormater dateString={date} />
       </Text>
-      <Text fontSize="md" className="">{excerpt}</Text>
+      <Text fontSize="2xl" className="">{excerpt}</Text>
     </>
   )
 }

@@ -4,6 +4,7 @@ import CoverImage from './cover-image'
 import PostTitle from './post-title'
 import Author from '../types/author'
 
+import { Center, Heading, Text } from "@chakra-ui/react"
 type Props = {
   title: string
   coverImage: string
@@ -14,13 +15,19 @@ type Props = {
 const PostHeader = ({ title, coverImage, date, author }: Props) => {
   return (
     <>
-      <PostTitle>{title}</PostTitle>
-      <div className="mb-6 text-center small-text">
-        <DateFormater dateString={date} />
-      </div>
-      <div className="mb-8 md:mb-16 -mx-5 sm:mx-0">
-        { coverImage && <CoverImage title={title} src={coverImage} /> }
-      </div>
+      <Center height="100px">
+        <Heading fontSize="4xl" fontWeight="900" >
+          {title}
+        </Heading>
+      </Center >
+      <Center>
+        <Text fontSize="xl">
+          <DateFormater dateString={date} />
+        </Text>
+      </Center >
+      <>
+        { coverImage && <CoverImage title={title} src={coverImage} />}
+      </>
     </>
   )
 }

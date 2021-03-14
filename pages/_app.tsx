@@ -1,9 +1,11 @@
 import { AppProps } from 'next/app';
 import { Provider } from 'next-auth/client';
+
 import { ChakraProvider } from "@chakra-ui/react"
-import { extendTheme } from "@chakra-ui/react"
-import '../scss/index.scss'
 import theme from '../themes/index'
+
+import '../scss/index.scss'
+
 
 
 export default function MyApp({ Component, pageProps }: AppProps) {
