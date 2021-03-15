@@ -18,7 +18,8 @@ const Work = ({ allWork }: Props) => {
         <title>Work - {CMS_NAME}</title>
       </Head>
       <Container maxW="container.xl">
-        <Heading as="h2" fontSize="4xl" fontWeight="800" mt={50} >Selective Projects</Heading>
+        <Heading as="h2" fontSize="4xl" fontWeight="800" mt={50} color="gray.700" >Selective Projects</Heading>
+        <Text fontSize="xl" fontWeight="400" mt={2} color="gray.600" >A curated selection of projects that I have designed and developed over the years</Text>
         <Alert status="warning" variant="subtle" mt={10} mb={10} borderWidth="0px" rounded="lg" boxShadow="xs" p="6">
           <Box flex="1">
             <Heading as="h3" fontSize="2xl" fontWeight="600" >Update:</Heading>

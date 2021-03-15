@@ -2,7 +2,7 @@
 private: "locked"
 title: "Wonder"
 excerpt: "Android app design and web app development"
-coverImage: "/assets/work/wonder/cover.jpg"
+coverImage: "https://s3-ap-southeast-2.amazonaws.com/k97static/proj-placeholder/wonder.jpg"
 date: "2013-09-20T00:00:00.000Z"
 author:
   name: Karthik

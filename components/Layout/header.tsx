@@ -25,7 +25,7 @@ const Header = () => {
       <Flex className="header-background" borderWidth="1px" rounded="lg" boxShadow="lg" zIndex="docked"  >
         <Box pt="5" pb="5" pl="5" >
           <Link href="/">
-            <Center w="40px">
+            <Center w="40px" cursor="pointer">
               <Image src="/assets/logo.svg" alt="K97 Logo" className="logo" />
             </Center>
           </Link>
@@ -33,16 +33,16 @@ const Header = () => {
         <Spacer />
         <Box mr="3" p="6" >
           <Link href="/about" >
-            <Text fontSize="xl" fontWeight="bold">About</Text>
+            <Text fontSize="xl" fontWeight="bold" cursor="pointer" color="brand.800">About</Text>
           </Link>
         </Box>
         <Box mr="3" p="6" >
           <Link href="/work" >
-            <Text fontSize="xl" fontWeight="bold">Work</Text></Link>
+            <Text fontSize="xl" fontWeight="bold" cursor="pointer" color="brand.800">Work</Text></Link>
         </Box>
         <Box mr="0" p="6" >
           <Link href="/articles" >
-            <Text fontSize="xl" fontWeight="bold">Articles</Text>
+            <Text fontSize="xl" fontWeight="bold" cursor="pointer" color="brand.800">Articles</Text>
           </Link>
         </Box>
 

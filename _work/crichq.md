@@ -1,7 +1,7 @@
 ---
 title: "CricHQ"
 excerpt: "Web & mobile application design and development"
-coverImage: "/assets/work/crichq/cover.jpg"
+coverImage: "https://s3-ap-southeast-2.amazonaws.com/k97static/proj-placeholder/crichq.jpg"
 date: "2015-02-02T00:00:00.000Z"
 author:
   name: Karthik

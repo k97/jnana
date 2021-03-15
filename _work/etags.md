@@ -1,7 +1,7 @@
 ---
 title: "eTags Grading"
 excerpt: "Dynamic form builder framework"
-coverImage: "/assets/work/etags/cover.jpg"
+coverImage: "https://s3-ap-southeast-2.amazonaws.com/k97static/proj-placeholder/etags.jpg"
 date: "2015-02-02T00:00:00.000Z"
 author:
   name: Karthik

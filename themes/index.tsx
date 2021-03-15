@@ -14,9 +14,16 @@ const overrides = {
   breakpoints,
   colors: {
     brand: {
-      100: "#f00",
-      // ...
-      900: "#f00",
+      50: '#ddf2ff',
+      100: '#aed6ff',
+      200: '#7dbaff',
+      300: '#4a9fff',
+      400: '#1a83ff',
+      500: '#006ae6',
+      600: '#0052b4',
+      700: '#003b82',
+      800: '#002351',
+      900: '#000d21',
     },
   },
   styles: {
@@ -27,7 +34,7 @@ const overrides = {
       },
       // styles for the `a`
       a: {
-        color: "teal.500",
+        color: "brand.500",
         _hover: {
           textDecoration: "underline",
         },
