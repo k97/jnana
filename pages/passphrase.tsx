@@ -21,7 +21,7 @@ import { Layout } from '../components/Layout/index'
 
 export default function SignIn({ csrfToken }: any) {
 
-  const [isAlertVisible, setAlertVisible]: any = useState(true);
+  const [isAlertVisible, setAlertVisible]: any = useState(false);
   const router = useRouter();
 
 
