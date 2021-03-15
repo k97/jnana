@@ -1,6 +1,6 @@
 
 import Head from 'next/head';
-import { Container } from "@chakra-ui/react"
+import { Container, Heading, Text } from "@chakra-ui/react"
 import { Layout } from '../components/Layout/index';
 import MoreStories from '../components/more-stories';
 import HeroPost from '../components/hero-post';
@@ -19,10 +19,12 @@ const Articles = ({ allPosts }: Props) => {
   return (
     <Layout>
       <Head>
-        <title>Artciles - {CMS_NAME}</title>
+        <title>Articles - {CMS_NAME}</title>
       </Head>
 
       <Container maxW="container.xl">
+        <Heading as="h2" fontSize="4xl" fontWeight="800" mt={50} color="gray.700">Articles & References</Heading>
+        <Text fontSize="xl" fontWeight="400" mt={2} color="gray.800" >List of journals about digital products</Text>
         {heroPost && (
           <HeroPost
             title={heroPost.title}

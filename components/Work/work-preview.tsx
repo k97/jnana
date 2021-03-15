@@ -17,11 +17,9 @@ const WorkPreview = ({
   return (
     <Link as={`/work/${slug}`} href="/work/[slug]">
       <GridItem colSpan={6}>
-        <LinkBox as="article" p="5" borderWidth="1px" shadow="sm" rounded="md" className="work-card">
-          <Heading fontSize="2xl" mb="3" fontWeight="600">
-            <LinkOverlay>
-              {title}
-            </LinkOverlay>
+        <LinkBox as="article" p="5" borderWidth="1px" borderColor="gray.100" shadow="sm" rounded="md" cursor="pointer" _hover={{ rounded: "xl", textDecoration: 'none', shadow: "2xl", borderColor: "brand.50" }}>
+          <Heading fontSize="2xl" mb="3" fontWeight="700" color="gray.600" textDecoration="none">
+            {title}
           </Heading>
           {coverImage && <Image src={coverImage} alt={`Cover Image for ${title}`} rounded="lg" />}
           <Text fontSize="2xl" mt="4">{excerpt}</Text>

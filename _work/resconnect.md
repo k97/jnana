@@ -1,7 +1,7 @@
 ---
 title: "Resconnect"
 excerpt: "Web application design and development"
-coverImage: "/assets/work/resconnect/cover.jpg"
+coverImage: "https://s3-ap-southeast-2.amazonaws.com/k97static/proj-placeholder/rescon.jpg"
 date: "2015-02-02T00:00:00.000Z"
 author:
   name: Karthik

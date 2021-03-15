@@ -9,12 +9,12 @@ const HeroIntro = () => {
 
           <Text fontSize="3xl" fontWeight="500" casing="uppercase" mt="20" mb="0" pb="0">Hello! I am</Text>
           <Heading as="h1" fontSize="6xl" fontWeight="900" mt="0" pt="0">Karthik</Heading>
-          <Text fontSize="2xl" mt="5" mb="5">Designer based in Melbourne, who likes to code, create experiences that makes people’s lives easier.</Text>
+          <Text fontSize="2xl" mt="5" mb="6">Generalist Product Designer based in Melbourne, who likes to code, create experiences that makes people’s lives better</Text>
 
           <Link href="/about">
-            <Button colorScheme="blue" fontSize="xl" size="lg" >More about me</Button>
+            <Button colorScheme="brand" fontSize="xl" size="lg" shadow="xl" _hover={{ shadow: "sm", background: "brand.400" }} >More about me</Button>
           </Link>
-          <Text fontSize="2xl" mt="5">See few of my selective <Link href="/work"><a>work here</a></Link>, or If you want to read some interesting collation of <Link href="/articles"><a>articles here</a></Link>.</Text>
+          <Text fontSize="2xl" mt="6">See few of my selective <Link href="/work"><a>work here</a></Link>, or If you want to read some interesting collation of <Link href="/articles"><a>articles here</a></Link>.</Text>
         </Box>
 
         <Box width={{ base: "5%", sm: "0%", md: "0%", lg: "5%" }} />
