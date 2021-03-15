@@ -1,7 +1,7 @@
 {
   "name": "k97-jana",
-  "version": "8.0.0",
-  "license": "Creative Commons",
+  "version": "8.5.0",
+  "license": "CC-BY-1.0",
   "scripts": {
     "build": "next build",
     "dev": "next --port=9797",
