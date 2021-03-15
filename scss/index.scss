@@ -1,7 +1,6 @@
-@import './font';
-@import "./pages/index";
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400&display=swap');
 
-// 0070f3
+@import "./pages/index";
 
 * {
   font-style: normal;
@@ -10,6 +9,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
+
 
 main {
   margin-top: 100px;

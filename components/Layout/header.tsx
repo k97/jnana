@@ -31,7 +31,6 @@ const Header = () => {
                 <path d="M46 44V34H38.8739V37.7908H7.12607V34H0L0 44H46Z" fill="#333" />
                 <circle cx="42" cy="26" r="4" fill="#333" />
               </svg>
-
             </Center>
           </Link>
         </Box>
