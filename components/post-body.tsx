@@ -1,5 +1,5 @@
 
-import { Text } from "@chakra-ui/react"
+import { Box } from "@chakra-ui/react"
 
 type Props = {
   content: string
@@ -7,12 +7,12 @@ type Props = {
 
 const PostBody = ({ content }: Props) => {
   return (
-    <Text fontSize="2xl" mt="50">
+    <Box fontSize="2xl" mt="50">
       <div
-        className="work-content"
+        className="markdown-content"
         dangerouslySetInnerHTML={{ __html: content }}
       />
-    </Text>
+    </Box>
   )
 }
 

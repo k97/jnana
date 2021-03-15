@@ -1,8 +1,8 @@
 import NextAuth from 'next-auth';
 import Providers from 'next-auth/providers';
-
 const isCorrectCredentials = (credentials: any) =>
-  credentials.username === "cometogether"
+  credentials.username === "apollo"
+
 
 const options = {
   // Configure one or more authentication providers

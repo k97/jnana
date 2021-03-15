@@ -3,7 +3,7 @@ import { Container, Button, Heading, Text, Grid, GridItem, Box, Image, Flex } fr
 
 const HeroIntro = () => {
   return (
-    <Container maxW="container.xl">
+    <Container maxW="container.xl" pt={30}>
       <Flex>
         <Box width={{ base: "50%", sm: "100%", md: "100%", lg: "40%" }}>
 

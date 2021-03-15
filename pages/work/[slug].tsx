@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router'
-import { useState, useEffect } from "react";
-import { signIn, signOut, useSession, getSession, csrfToken } from 'next-auth/client';
+import { useState, useEffect } from "react"
+import { signIn, signOut, useSession, getSession, csrfToken } from 'next-auth/client'
 import Head from 'next/head'
 import ErrorPage from 'next/error'
 
-import { Center, CircularProgress, Container, Heading, Text } from "@chakra-ui/react"
+import { Center, CircularProgress, Container, Heading, Text, Flex, Box } from "@chakra-ui/react"
 
 import { getWorkBySlug, getAllWork } from '../../lib/work-api'
 import { CMS_NAME } from '../../lib/constants'
@@ -27,7 +27,7 @@ const work = ({ work }: Props) => {
   useEffect(() => {
     const showLockScreen = async () => {
       const session = await getSession();
-      if (!session) {
+      if (work.author.private && !session) {
         signIn()
       }
     };
@@ -51,8 +51,10 @@ const work = ({ work }: Props) => {
               <Center h="400px"><CircularProgress size="100px" thickness="4px" isIndeterminate /></Center>
             ) : (
               <>
-                <Center h="200px"><Heading fontSize="4xl" fontWeight="900">{work.title}</Heading></Center>
-                <Text fontSize="2xl" className="work-content" dangerouslySetInnerHTML={{ __html: work.content }} />
+                <Center h="150px"><Heading fontSize="4xl" fontWeight="900">{work.title}</Heading></Center>
+                <Box fontSize="2xl">
+                  <div className="markdown-content" dangerouslySetInnerHTML={{ __html: work.content }} />
+                </Box>
               </>
             )
           )
