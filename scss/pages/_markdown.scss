@@ -1,4 +1,4 @@
-.work-content {
+.markdown-content {
 
   h1,
   h2,
@@ -12,10 +12,16 @@
     padding-bottom: 0;
   }
 
-  p {
+  p,
+  figure {
+    display: block;
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 2.0rem;
+
+    figcaption {
+      text-align: center;
+    }
   }
 
   img {
@@ -23,9 +29,4 @@
     text-align: center;
     margin: 0 auto;
   }
-}
-
-
-.work-card {
-  cursor: pointer;
 }

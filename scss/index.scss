@@ -1,10 +1,20 @@
 @import './font';
 @import "./pages/index";
 
+// 0070f3
+
 * {
   font-style: normal;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.work-card {
+  cursor: pointer;
 }

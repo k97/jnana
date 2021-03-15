@@ -26,7 +26,7 @@ const Index = () => {
         .header-background {
           border: none;
           backdrop-filter: none;
-          box-shadow: none;
+          box-shadow: none!important;
         }
       `}</style>
       <div className="homepage">
