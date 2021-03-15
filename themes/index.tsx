@@ -43,7 +43,7 @@ const overrides = {
   },
   fonts: {
     body: "'Karla', system-ui, sans-serif",
-    heading: "system-ui, Inter, serif",
+    heading: "-apple-system, BlinkMacSystemFont, Roboto ,'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
     mono: "Menlo, monospace",
   },
   fontSizes: {
