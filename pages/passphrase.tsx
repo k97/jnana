@@ -56,7 +56,7 @@ export default function SignIn({ csrfToken }: any) {
             }
 
           </FormControl>
-          <Button type="submit" size="lg" fontSize="xl" colorScheme="blue" width="200px" mt={4}>Unlock</Button>
+          <Button type="submit" size="lg" fontSize="xl" colorScheme="brand" width="200px" mt={4}>Unlock</Button>
         </form>
 
         <Box variant="subtle" mt={10} mb={10} borderWidth="0px" rounded="lg" boxShadow="xs" p="4">

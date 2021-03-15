@@ -15,7 +15,7 @@ const About = () => {
       </Head>
       <Container maxW="container.xl">
         <Box width={{ base: "50%", sm: "100%", md: "100%", lg: "50%" }}>
-          <Heading as="h2" fontSize="4xl" fontWeight="800" mt={50} color="gray.900">About</Heading>
+          <Heading as="h2" fontSize="4xl" fontWeight="800" mt={75} color="gray.900">About</Heading>
 
           <Text fontSize="2xl" mt="8" mb="8" color="gray.900">My full name is Karthikeyan Rajendran and I like to think myself as a generalist designer, who loves to solve design problems with a focus on <a href="https://en.wikipedia.org/wiki/Human-centered_design" target="_blank">HCD ↗</a> and product requirements.
           Good design solutions help build traction or grow business & revenue, and I enjoy spending my time on designing products that creates value.</Text>
