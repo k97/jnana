@@ -1,7 +1,10 @@
 
 import Head from 'next/head';
-import { Layout } from '../components/Layout/index';
+import { useState, useEffect } from "react"
 import { Container, Heading, Text, Alert, Box, Grid, } from "@chakra-ui/react"
+import { signIn, signOut, useSession, getSession } from 'next-auth/client'
+
+import { Layout } from '../components/Layout/index';
 import WorkPreview from '../components/Work/work-preview'
 
 import { getAllWork } from '../lib/work-api';
@@ -12,13 +15,27 @@ type Props = {
 }
 
 const Work = ({ allWork }: Props) => {
+  const [session, loading]: any = useSession()
+  const [isActiveSession, setActiveSession]: any = useState(false);
+
+  useEffect(() => {
+    const onCheckSessionStatus = async () => {
+      const session = await getSession();
+      if (session) {
+        setActiveSession(true)
+      }
+    };
+    onCheckSessionStatus();
+  });
+
+
   return (
     <Layout>
       <Head>
         <title>Work - {CMS_NAME}</title>
       </Head>
       <Container maxW="container.xl">
-        <Heading as="h2" fontSize="4xl" fontWeight="800" mt={50} color="gray.700" >Selective Projects</Heading>
+        <Heading as="h2" fontSize="4xl" fontWeight="800" mt={75} color="gray.700" >Selective Projects</Heading>
         <Text fontSize="xl" fontWeight="400" mt={2} color="gray.600" >A curated selection of projects that I have designed and developed over the years</Text>
         <Alert status="warning" variant="subtle" mt={10} mb={10} borderWidth="0px" rounded="lg" boxShadow="xs" p="6">
           <Box flex="1">
@@ -37,6 +54,8 @@ const Work = ({ allWork }: Props) => {
               coverImage={work.coverImage}
               slug={work.slug}
               excerpt={work.excerpt}
+              locked={work.author.private}
+              sessionStatus={isActiveSession}
             />
           ))}
         </Grid>

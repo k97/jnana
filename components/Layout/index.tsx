@@ -8,15 +8,6 @@ type Props = {
   children?: ReactNode
 }
 
-export const Container: FunctionComponent = ({ children }: Props) => {
-  return <div className="container">{children}</div>
-}
-
-export const Row: FunctionComponent = ({ children }: Props) => {
-  return <div className="row">{children}</div>
-}
-
-
 export const Layout = ({ preview, children }: Props) => {
   return (
     <>

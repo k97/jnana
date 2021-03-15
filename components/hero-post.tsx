@@ -23,9 +23,9 @@ const HeroPost = ({
   slug,
 }: Props) => {
   return (
-    <Box color="gray.600" _hover={{ background: 'brand.50', rounded: "xl", shadow: "sm" }}>
+    <Box color="gray.600" pt="8" pb="8" _hover={{ background: 'brand.50', rounded: "xl", shadow: "sm" }}>
       <Link as={`/articles/${slug}`} href={`/articles/${slug}`}>
-        <Heading as="h3" fontSize="2xl" fontWeight="600" pt="35" mb="2" cursor="pointer">{title}</Heading>
+        <Heading as="h3" fontSize="2xl" fontWeight="600" cursor="pointer">{title}</Heading>
       </Link>
       <Text fontSize="lg" mb="2">
         <DateFormater dateString={date} />

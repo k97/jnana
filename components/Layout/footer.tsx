@@ -28,7 +28,7 @@ const Footer = () => {
           </a>
         </Box>
       </SimpleGrid>
-      <Text fontSize="xl" mt="5" mb="10">Copyrights &copy; {yearVal}. No Tracking</Text>
+      <Text fontSize="xl" mt="5" mb="10">Copyrights &copy; {yearVal}. Alpha build</Text>
     </Container >
   )
 }

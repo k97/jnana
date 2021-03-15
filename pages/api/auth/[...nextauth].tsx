@@ -1,8 +1,11 @@
 import NextAuth from 'next-auth';
 import Providers from 'next-auth/providers';
-const isCorrectCredentials = (credentials: any) =>
-  credentials.username === "apollo"
 
+
+const isCorrectCredentials = (credentials: any) => {
+  const passphraseReferences: any = ['apollo', 'helvetica', 'moonshot', 'shazam'];
+  return passphraseReferences.includes(credentials.username);
+}
 
 const options = {
   // Configure one or more authentication providers
