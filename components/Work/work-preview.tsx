@@ -1,13 +1,13 @@
 import Link from 'next/link'
-import WorkImage from './work-image'
 import { Heading, LinkBox, LinkOverlay, Text, Image, GridItem, Spacer, CloseButton, Flex, Tooltip } from "@chakra-ui/react"
+
 type Props = {
   title: string
   coverImage: string
   excerpt: string
   slug: string
   locked: any
-  sessionStatus: boolean
+  sessionStatus: any
 }
 
 const WorkPreview = ({

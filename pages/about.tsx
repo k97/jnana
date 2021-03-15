@@ -2,7 +2,6 @@
 import Head from 'next/head'
 import { Container, Box, Grid, GridItem, Heading, Text } from "@chakra-ui/react"
 import { Layout } from '../components/Layout/index'
-import LockPassphrase from '../components/lock'
 import { CMS_NAME, GOOGLE_DRIVE_RESUME } from '../lib/constants'
 
 
