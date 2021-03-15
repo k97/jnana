@@ -1,12 +1,12 @@
 ---
 title: "CricHQ"
-excerpt: "Web & mobile application design and development"
-coverImage: "https://s3-ap-southeast-2.amazonaws.com/k97static/proj-placeholder/crichq.jpg"
+excerpt: "Mobile app design along with focus on user interface design and development for web application"
+coverImage: "/assets/work/cover/crichq.png"
 date: "2015-02-02T00:00:00.000Z"
 author:
   name: Karthik
-  private: true
-  picture: "/assets/blog/authors/joe.jpeg"
+  private: false
+  tags: Mobile apps, Web
 ogImage:
   url: "/assets/blog/shell-grunt/cover.png"
 ---

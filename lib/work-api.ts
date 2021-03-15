@@ -39,7 +39,6 @@ export function getWorkBySlug(slug: string, fields: string[] = []) {
 
 export function getAllWork(fields: string[] = []) {
   const slugs = getWorkSlugs();
-  console.log('SLUGS', slugs);
   const work = slugs
     .map((slug) => getWorkBySlug(slug, fields))
     // sort work by date in descending order

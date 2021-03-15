@@ -35,18 +35,18 @@ const Work = ({ allWork }: Props) => {
         <title>Work - {CMS_NAME}</title>
       </Head>
       <Container maxW="container.xl">
-        <Heading as="h2" fontSize="4xl" fontWeight="800" mt={75} color="gray.700" >Selective Projects</Heading>
-        <Text fontSize="xl" fontWeight="400" mt={2} color="gray.600" >A curated selection of projects that I have designed and developed over the years</Text>
-        <Alert status="warning" variant="subtle" mt={10} mb={10} borderWidth="0px" rounded="lg" boxShadow="xs" p="6">
+        <Heading as="h2" fontSize="4xl" fontWeight="800" mt={75} color="gray.700" >Select Projects</Heading>
+        <Text fontSize="xl" fontWeight="400" mt={2} color="gray.600" >A curated list of projects that I have designed and developed over the years</Text>
+        <Alert status="warning" variant="subtle" mt={6} mb={6} borderWidth="0px" rounded="lg" boxShadow="xs" pt="3" pb="4" pr="6" pl="6">
           <Box flex="1">
-            <Heading as="h3" fontSize="2xl" fontWeight="600" >Update:</Heading>
-            <Text fontSize="xl" mt={2} mb={2}>
+            <Heading as="h3" fontSize="2xl" fontWeight="600">Update:</Heading>
+            <Text fontSize="xl" mt={2}>
               Personal projects are hard to juggle with day jobs and I'm trying my best to fit in all my projects soon, please check again later.
             </Text>
           </Box>
         </Alert>
 
-        <Grid templateColumns="repeat(12, 1fr)" gap={8}>
+        <Grid gap={8}>
           {allWork.map((work: any) => (
             <WorkPreview
               key={work.slug}
@@ -55,10 +55,16 @@ const Work = ({ allWork }: Props) => {
               slug={work.slug}
               excerpt={work.excerpt}
               locked={work.author.private}
+              tags={work.author.tags}
               sessionStatus={isActiveSession}
             />
           ))}
         </Grid>
+        {/*
+        <Heading as="h2" fontSize="4xl" fontWeight="800" mt={75} color="gray.700" >Tools</Heading>
+        <Text fontSize="xl" fontWeight="400" mt={2} color="gray.600" >A list of tools that I have designed to facilitate any design workflows</Text>
+        Yanx, Viewport Resizer */}
+
       </Container>
     </Layout >
   )

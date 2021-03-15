@@ -31,6 +31,7 @@ const Header = () => {
                 <path d="M46 44V34H38.8739V37.7908H7.12607V34H0L0 44H46Z" fill="#333" />
                 <circle cx="42" cy="26" r="4" fill="#333" />
               </svg>
+
             </Center>
           </Link>
         </Box>
@@ -44,7 +45,7 @@ const Header = () => {
           <Link href="/work" >
             <Text fontSize="xl" fontWeight="bold" cursor="pointer" color="brand.800" _hover={{ color: "brand.500" }}>Work</Text></Link>
         </Box>
-        <Box mr="0" p="6" >
+        <Box mr="3" p="6" >
           <Link href="/articles" >
             <Text fontSize="xl" fontWeight="bold" cursor="pointer" color="brand.800" _hover={{ color: "brand.500" }}>Articles</Text>
           </Link>
@@ -58,7 +59,7 @@ const Header = () => {
         </Box> */}
 
         {session && (
-          <Box mr="0" p="6" >
+          <Box mr="0" pt="6" pl="3" pr="6" >
             <Tooltip label="Lockdown projects">
               <Button size="sm" variant="ghost" onClick={onLockProjects} >
                 <Image src="/assets/lock.svg" htmlWidth="16px" opacity="0.8" position="relative" bottom="2px" />
