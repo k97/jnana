@@ -22,6 +22,7 @@ const Index = () => {
           background-repeat: no-repeat;
           background-attachment: fixed;
           height: 100%;
+          background-image: radial-gradient( circle 1158px at 6.4% 48.8%,  rgba(195,241,245,1) 0%, rgba(255,255,255,1) 90.2% );
         }
         .header-background {
           border: none;
