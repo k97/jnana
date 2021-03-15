@@ -1,12 +1,12 @@
 ---
 title: "Resconnect"
-excerpt: "Web application design and development"
-coverImage: "https://s3-ap-southeast-2.amazonaws.com/k97static/proj-placeholder/rescon.jpg"
-date: "2015-02-02T00:00:00.000Z"
+excerpt: "Design research with usability tests, workflow inquires, screen designs and component development"
+coverImage: "/assets/work/cover/ek.png"
+date: "2016-05-25T00:00:00.000Z"
 author:
   name: Karthik
   private: true
-  picture: "/assets/blog/authors/joe.jpeg"
+  tags: Design sprint, Usability research, Component library
 ogImage:
   url: "/assets/blog/shell-grunt/cover.png"
 ---
