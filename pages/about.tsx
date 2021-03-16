@@ -20,7 +20,7 @@ const About = () => {
 
           <Text fontSize="2xl" mb="8" color="gray.900">Right now, I'm working as Product Designer at <a href="https://telstrahealth.com/" target="_blank">Telstra Health ↗</a> in Melbourne, designing and building digital products for virtual healthcare.</Text>
 
-          <Text fontSize="2xl" mb="8" color="gray.600">Before Telstra Health, I was working across <a href="https://www.emirates.com/au/english/about-us/">Emirates Airlines ↗</a> with different teams to deliver products used by the flight crew and passengers. I started my foray as product designer at FastTrack360 cloud systems.</Text>
+          <Text fontSize="2xl" mb="8" color="gray.600">Before Telstra Health, I was working across <a href="https://www.emirates.com/au/english/about-us/">Emirates Airlines ↗</a> with different teams to deliver products used by the flight crew and passengers. I started my trade as product designer at FastTrack360 cloud systems.</Text>
 
           <Text fontSize="2xl" mb="8" color="gray.600">I share my perspectives on things that are interesting <a href="/articles">here</a> and if you are looking for my resume, <a href={GOOGLE_DRIVE_RESUME} target="_blank">it's here ↗</a>.</Text>
 
