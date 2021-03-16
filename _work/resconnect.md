@@ -1,5 +1,5 @@
 ---
-title: "Resconnect"
+title: "Emirates Connect"
 excerpt: "Design research with usability tests, workflow inquires, screen designs and component development"
 coverImage: "/assets/work/cover/ek.png"
 date: "2016-05-25T00:00:00.000Z"
@@ -11,7 +11,7 @@ ogImage:
   url: "/assets/blog/shell-grunt/cover.png"
 ---
 
-The ResConnect was the first major application I got to work in Emirates Airlines when I joined in 2015. This case-study is to share my perspective as a front-end developer while on the product with our customized version of the design sprint.
+The Emirates Connect also known as ResConnect was the first major application I got to work in Emirates Airlines when I joined in 2015. This case-study is to share my perspective as a UX Engineer while working on the product with our adapted version of the design sprint.
 
 ### Overview
 
