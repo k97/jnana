@@ -25,7 +25,7 @@ const WorkPreview = ({
 
   return (
     <Link as={`/work/${slug}`} href={`/work/${slug}`}>
-      <GridItem colSpan={6}>
+      <GridItem>
         <LinkBox as="article" p="6" borderWidth="1px" borderColor="gray.100" rounded="lg" cursor="pointer" _hover={{ rounded: "xl", textDecoration: 'none', shadow: "2xl", borderColor: "brand.50" }}>
           <Flex>
 
@@ -35,15 +35,16 @@ const WorkPreview = ({
 
             <Box flex="1" >
 
-              <Flex mb="2" ><Tooltip label="Private project">
-                <Heading fontSize="2xl" fontWeight="600" color="gray.600" textDecoration="none">
-                  {title}
-                  <>
-                    {locked && !sessionStatus && (<Image src="/assets/lock.svg" htmlWidth="14px" opacity="0.65" display="inline-block" position="relative" bottom="3px" ml="3" />)}
-                    {locked && sessionStatus && (<Image src="/assets/unlock.svg" htmlWidth="18px" opacity="0.65" display="inline-block" position="relative" bottom="3px" ml="3" />)}
-                  </>
-                </Heading>
-              </Tooltip>
+              <Flex mb="2" >
+                <Tooltip label="Private project">
+                  <Heading fontSize="2xl" fontWeight="600" color="gray.600" textDecoration="none">
+                    {title}
+                    <>
+                      {locked && !sessionStatus && (<Image src="/assets/lock.svg" htmlWidth="14px" opacity="0.65" display="inline-block" position="relative" bottom="3px" ml="3" />)}
+                      {locked && sessionStatus && (<Image src="/assets/unlock.svg" htmlWidth="18px" opacity="0.65" display="inline-block" position="relative" bottom="3px" ml="3" />)}
+                    </>
+                  </Heading>
+                </Tooltip>
                 <Spacer />
 
               </Flex>

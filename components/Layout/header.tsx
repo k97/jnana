@@ -46,6 +46,11 @@ const Header = () => {
             <Text fontSize="xl" fontWeight="bold" cursor="pointer" color="brand.800" _hover={{ color: "brand.500" }}>Work</Text></Link>
         </Box>
         <Box mr="3" p="6" >
+          <Link href="/tools" >
+            <Text fontSize="xl" fontWeight="bold" cursor="pointer" color="brand.800" _hover={{ color: "brand.500" }}>Tools</Text>
+          </Link>
+        </Box>
+        <Box mr="3" p="6" >
           <Link href="/articles" >
             <Text fontSize="xl" fontWeight="bold" cursor="pointer" color="brand.800" _hover={{ color: "brand.500" }}>Articles</Text>
           </Link>
