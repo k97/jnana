@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../../lib/constants'
+import { CMS_NAME, HOME_OG_IMAGE_URL, CMS_DESCRIPTION } from '../../lib/constants'
 
 const Meta = () => {
   return (
@@ -26,7 +26,7 @@ const Meta = () => {
       <link rel="shortcut icon" href="/favicon_io/favicon.ico" />
       <meta
         name="description"
-        content={`Hello! I’m Karthik — a designer working on products that bridge the gap between the software and people.`}
+        content={CMS_DESCRIPTION}
       />
 
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
