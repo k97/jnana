@@ -1,15 +1,17 @@
 import { useRouter } from 'next/router'
-import { useState, useEffect } from "react"
+import { useState, useRef, useEffect } from "react"
 import { signIn, signOut, useSession, getSession, csrfToken } from 'next-auth/client'
 import Head from 'next/head'
 import ErrorPage from 'next/error'
 import Link from 'next/link'
+import mediumZoom from 'medium-zoom'
 
 import { Center, CircularProgress, Container, Heading, Image, Flex, Box, Button } from "@chakra-ui/react"
 
 import { getWorkBySlug, getAllWork } from '../../lib/work-api'
 import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
+
 
 import { Layout } from '../../components/Layout/index'
 
@@ -20,6 +22,8 @@ type Props = {
 const work = ({ work }: Props) => {
   const router = useRouter()
   const [session, loading]: any = useSession()
+  const contentRef = useRef(null)
+
 
   if (!router.isFallback && !work?.slug) {
     return <ErrorPage statusCode={404} />
@@ -33,7 +37,25 @@ const work = ({ work }: Props) => {
       }
     };
     showLockScreen();
+    setTimeout(() => {
+      const ele: any = contentRef.current;
+      if (ele && ele.textContent.length > 0) {
+        ele.click()
+      }
+    }, 1000);
+
   });
+
+
+  const handleToggleBody = () => {
+    const ele: any = contentRef.current;
+
+    if (ele && ele.textContent.length > 0) {
+      const images: any = ele.querySelectorAll('img');
+      mediumZoom(images);
+    }
+  }
+
 
   return (
     <Layout>
@@ -44,7 +66,7 @@ const work = ({ work }: Props) => {
         <meta property="og:image" content={work.ogImage.url} />
       </Head>
 
-      <Container maxW="container.xl">
+      <Container maxW="container.xl" >
         {router.isFallback
           ? (<CircularProgress size="100px" thickness="4px" isIndeterminate />)
           : (
@@ -66,7 +88,7 @@ const work = ({ work }: Props) => {
                 </Flex>
 
                 <Box mt="5" fontSize="2xl">
-                  <div className="markdown-content" dangerouslySetInnerHTML={{ __html: work.content }} />
+                  <div className="markdown-content" ref={contentRef} onClick={handleToggleBody} dangerouslySetInnerHTML={{ __html: work.content }} />
                 </Box>
               </>
             )
@@ -97,7 +119,9 @@ export async function getStaticProps({ params }: Params) {
     'ogImage',
     'coverImage',
   ])
-  const content = await markdownToHtml(work.content || '')
+
+  const content = await markdownToHtml(work.content || '');
+
 
   return {
     props: {

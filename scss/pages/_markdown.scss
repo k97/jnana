@@ -1,3 +1,11 @@
+.medium-zoom-image--opened {
+  z-index: 100000;
+}
+
+.medium-zoom--opened .medium-zoom-overlay {
+  z-index: 10000;
+}
+
 .markdown-content {
 
   h1,
@@ -12,6 +20,31 @@
     padding-bottom: 0;
   }
 
+  // h1 {
+  //   font-size: 2em;
+  // }
+
+
+
+  // h2 {
+  //   font-size: 1.5em;
+  // }
+
+  // h3 {
+  //   font-size: 1.25em;
+  // }
+
+  // h4 {
+  //   font-size: 1em;
+  // }
+
+  // h5 {
+  //   font-size: .875em;
+  // }
+
+  // h6 {
+  //   font-size: .85em;
+  // }
   p,
   figure {
     display: block;
@@ -25,9 +58,7 @@
   }
 
   img {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
+    cursor: zoom;
   }
 }
 

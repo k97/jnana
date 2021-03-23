@@ -39,7 +39,7 @@ We discussed the vision of the product and the value creation in multiple worksh
 
 Once we mapped out the data and started to construct themes for the product, we then proceeded to workout few different hypothesis to create a story and then proceeded to validate these stories through screens and flows. The validation methods varies from clinical testing, workflow inquiries with clinical staff. We collected data in simple formats to validate our findings and initial assumptions. With this information, I also continued to focus on the product evolution on how each feature will be presented in the right context.
 
-<div class="vhp-markdown-gallery">
+<div class="work-full-img work-img-border">
 
 ![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/1.png)
 ![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/2.png)
