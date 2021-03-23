@@ -1,34 +1,33 @@
 ---
 title: "CricHQ"
 excerpt: "Mobile app design along with focus on user interface design and development for web application"
-coverImage: "/assets/work/cover/crichq.png"
+coverImage: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/cover/crichq.png"
 date: "2015-02-02T00:00:00.000Z"
 author:
   name: Karthik
   private: false
-  tags: Mobile apps, Web
+  tags: Product design, Mobile apps
 ogImage:
   url: "/assets/blog/shell-grunt/cover.png"
 ---
 
-CricHQ is a more of a platform than an app which automated the manual process of scoring and organizing cricketing events at any scale and level. The initial user touch-point starts with the web app, where the user schedules and organizes a tournament and then each of the scheduled matches are scored from within the mobile apps.
+CricHQ is a scoring platform automated the process of scoring and organizing cricketing tournaments. I worked with CricHQ as an interface designer for the mobile apps and worked with the engineering team on the web app.
 
-### Role
+## Design workflow
 
-I was involved in the front-end development of the admin application, design of mobile app screens and the marketing website.
+Product KPIs were set by the stakeholders and as product team we collectively worked on picking the product opportunities and set out to deliver. The designs kicked off from paper sketches to a low-fidelity prototypes after each iteration involving different user validations, we then proceeded to do high-fidelity designs. Designing for the mobile apps was hard challenge since the feature release cycles were different for each platforms of Android and iOS. I worked closely with the PMs to prioritise design iterations for each platforms, while also working on the designs of the web application.
 
-### Design
+![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/crichq/mobile.png)
 
-![](/assets/work/crichq/chq-prototypes.png)
+## Interfaces
 
-The designs were roughly translated from paper sketches to a low-fidelity prototypes after each iteration involving different users. I used tools like Balsamiq for prototyping and photoshop for the high-fidelity mocks. Designing for mobile screen mostly involved strategizing the asset delivery adhering to the each platform\u2019s interface guidelines.
+The product modules were a combination of social, competition, live matches and team management. The web app worked as backend for the mobile apps in a typical user workflows and I worked closely with the engineering team on optimising the enduser experience.
 
-### Development
+![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/crichq/chq-app1.png)
 
-![](/assets/work/crichq/chq-app.png)
+## What did I learn?
 
-The webapp admin module was developed using [BackboneJS](http://backbonejs.org/), [MarionetteJS](https://marionettejs.com/) and [RequireJS](http://requirejs.org/) as the major frameworks and Rails as the backend which delivered REST services. Each sprint was different since I got to work across a range of modules: social, competition, live matches and the marketing website design and development.
+1. I introduced BEM methodologies into the web app style management and extensively worked on asset delivery mechanisms to optimise page load experience.
+2. Designing for different platforms simultaneously allowed me to establish a common experience with social workflows of the platform,
 
-![](/assets/work/crichq/chq-app1.png)
-
-The main challenges we faced during the development of the webapp were on the maintenance and reusability aspects. We used SCSS for styles development and broke down the scripts into multiple view layers to promote reusability of the components at large scale.
+![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/crichq/chq-prototypes.png)

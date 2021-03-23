@@ -30,3 +30,23 @@
     margin: 0 auto;
   }
 }
+
+.vhp-markdown-gallery p {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 10px;
+  grid-template-areas:
+    ". ."
+    ". .";
+}
+
+.work-full-img img {
+  display: block;
+  margin: 2.0rem 10px;
+}
+
+.work-img-border img {
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  border-radius: 10px;
+}

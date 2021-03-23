@@ -24,6 +24,7 @@ const Index = () => {
           border: none;
           backdrop-filter: none;
           box-shadow: none!important;
+          position: relative;
         }
       `}</style>
       <div className="homepage">

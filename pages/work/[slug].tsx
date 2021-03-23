@@ -4,7 +4,7 @@ import { signIn, signOut, useSession, getSession, csrfToken } from 'next-auth/cl
 import Head from 'next/head'
 import ErrorPage from 'next/error'
 
-import { Center, CircularProgress, Container, Heading, Text, Flex, Box } from "@chakra-ui/react"
+import { Center, CircularProgress, Container, Heading, Text, Flex, Box, SimpleGrid } from "@chakra-ui/react"
 
 import { getWorkBySlug, getAllWork } from '../../lib/work-api'
 import { CMS_NAME } from '../../lib/constants'
