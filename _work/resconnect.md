@@ -16,6 +16,7 @@ ogImage:
 ---
 
 The Emirates Connect, also known as ResConnect was the first major project I contributed as UX Engineer back in 2015.Since Emirates Airlines is one of the largest operator of passenger aircrafts in the world, a sizable amount of our customers book their tickets through the in-house call center.
+> The Emirates Connect, also known as ResConnect was the first major project I contributed as UX Engineer back in 2015.Since Emirates Airlines is one of the largest operator of passenger aircrafts in the world, a sizable amount of our customers book their tickets through the in-house call center.
 
 ## Overview
 

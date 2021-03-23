@@ -16,6 +16,7 @@ ogImage:
 ---
 
 HealthNow has been part of Virtual Clinical Solutions officially since taking over 2019. I was the product designer taking care of the mobile apps to the supporting web app and the store assets that included the logos, the communique messages that were dispatched through the product.
+> HealthNow has been part of Virtual Clinical Solutions officially since 2019. I was the product designer taking care of the mobile apps to the supporting web app and the store assets that included the logos, the communique messages that were dispatched through the product.
 
 # Design System
 
