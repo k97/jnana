@@ -7,6 +7,14 @@
 }
 
 .markdown-content {
+  blockquote {
+    color: var(--chakra-colors-gray-600);
+    border-radius: 10px;
+    margin: 1.0rem 0 2.0rem;
+    font-size: var(--chakra-fontSizes-3xl);
+    line-height: var(--chakra-lineHeights-tall);
+  }
+
 
   h1,
   h2,
