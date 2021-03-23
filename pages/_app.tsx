@@ -4,7 +4,6 @@ import { Provider } from 'next-auth/client';
 import { ChakraProvider } from "@chakra-ui/react"
 import theme from '../themes/index'
 
-import 'react-medium-image-zoom/dist/styles.css'
 import '../scss/index.scss'
 
 
