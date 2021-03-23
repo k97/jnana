@@ -15,7 +15,7 @@ ogImage:
   url: "/assets/blog/shell-grunt/cover.png"
 ---
 
-> Telstra Health’s Virtual Health service offering is powered by a suite of products that are used by patients and healthcare providers. I helped identify the touchpoints and designed a few of these products that delivers value through the virtual health experience: from patient onboarding all the way till service delivery.
+> Telstra Health’s Virtual Health service offering is powered by a suite of products that are used by patients and healthcare providers. I helped identify the touchpoints and designed the products that deliver value through the virtual health experience: from patient onboarding all the way till service delivery.
 
 # The Design Team
 
