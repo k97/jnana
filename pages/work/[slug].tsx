@@ -3,8 +3,9 @@ import { useState, useEffect } from "react"
 import { signIn, signOut, useSession, getSession, csrfToken } from 'next-auth/client'
 import Head from 'next/head'
 import ErrorPage from 'next/error'
+import Link from 'next/link'
 
-import { Center, CircularProgress, Container, Heading, Text, Flex, Box, SimpleGrid } from "@chakra-ui/react"
+import { Center, CircularProgress, Container, Heading, Image, Flex, Box, Button } from "@chakra-ui/react"
 
 import { getWorkBySlug, getAllWork } from '../../lib/work-api'
 import { CMS_NAME } from '../../lib/constants'
@@ -51,8 +52,20 @@ const work = ({ work }: Props) => {
               <Center h="400px"><CircularProgress size="100px" thickness="4px" isIndeterminate /></Center>
             ) : (
               <>
-                <Center h="150px"><Heading fontSize="4xl" fontWeight="900">{work.title}</Heading></Center>
-                <Box fontSize="2xl">
+                <Link href="/work">
+                  <Button mt="5" fontSize="xl" fontWeight="400" size="lg">← &nbsp;&nbsp;Work</Button>
+                </Link>
+
+                <Flex mt="5">
+                  <Center>
+                    <Image src={work.coverImage} alt={`Cover Image for ${work.title}`} rounded="2xl" width="120px" mr="4" />
+                  </Center>
+                  <Box flex="1">
+                    <Heading fontSize="5xl" color="gray.600" fontWeight="900" pt="5" pb="5" letterSpacing="-1.05px">{work.title}</Heading>
+                  </Box>
+                </Flex>
+
+                <Box mt="5" fontSize="2xl">
                   <div className="markdown-content" dangerouslySetInnerHTML={{ __html: work.content }} />
                 </Box>
               </>
