@@ -1,5 +1,5 @@
 
-import { Link, Heading, LinkBox, Flex, Center, Spacer, Box, Text, Image, Grid, GridItem } from "@chakra-ui/react"
+import { Link, Heading, LinkBox, Flex, Center, Spacer, Box, Text, Image, Grid, GridItem, Button } from "@chakra-ui/react"
 
 const WorkTools = () => {
 
@@ -9,7 +9,8 @@ const WorkTools = () => {
       cover: '/assets/tools/cover/yanx.png',
       description: "Google Chrome browser extension to take notes on new-tab space",
       isExternal: true,
-      link: "https://chrome.google.com/webstore/detail/yanx/difdegoclpgdhiagmenkbcfabilednaj?hl=en"
+      link: "https://chrome.google.com/webstore/detail/yanx/difdegoclpgdhiagmenkbcfabilednaj?hl=en",
+      source: "https://github.com/k97/yanx-chrome"
     },
     {
       title: "Design deck",
@@ -23,7 +24,8 @@ const WorkTools = () => {
       cover: '/assets/tools/cover/viewport.png',
       description: "Front-end tool to test and validate different viewport and screen sizes",
       isExternal: true,
-      link: "https://github.com/k97/viewport"
+      link: "https://k97.github.io/viewport/",
+      source: "https://github.com/k97/viewport"
     }
   ]
 
@@ -35,26 +37,33 @@ const WorkTools = () => {
       <Grid gap={8} mt="6">
         {toolCollection.map((tool: any) => (
           <GridItem>
-            <Link href={tool.link} isExternal={tool.isExternal} _hover={{ textDecoration: 'none' }}>
-              <LinkBox as="article" p="6" borderWidth="1px" borderColor="gray.100" rounded="lg" cursor="pointer" _hover={{ rounded: "xl", textDecoration: 'none', shadow: "2xl", borderColor: "brand.50" }}>
-                <Flex>
-                  <Center width="120px" mr="5" >
-                    {tool.cover && <Image src={tool.cover} alt={`Cover Image for ${tool.cover}`} rounded="2xl" />}
-                  </Center>
-                  <Box flex="1" >
-                    <Flex mb="2" >
-                      <Heading fontSize="2xl" fontWeight="600" color="gray.600" textDecoration="none">
-                        <>
-                          {tool.title}
-                          {tool.isExternal && (<Image src="/assets/external.svg" htmlWidth="20px" opacity="0.5" display="inline-block" position="relative" bottom="2px" ml="2" />)}
-                        </>
-                      </Heading>
-                    </Flex>
-                    <Text fontSize="2xl" color="gray.500" >{tool.description}</Text>
+
+            <LinkBox as="article" p="6" borderWidth="1px" borderColor="gray.100" rounded="lg" cursor="pointer" _hover={{ rounded: "xl", textDecoration: 'none', shadow: "2xl", borderColor: "brand.50" }}>
+              <Flex>
+                <Center width="120px" mr="5" >
+                  {tool.cover && <Image src={tool.cover} alt={`Cover Image for ${tool.cover}`} rounded="2xl" />}
+                </Center>
+                <Box flex="1" >
+                  <Flex mb="2" >
+                    <Heading fontSize="2xl" fontWeight="600" color="gray.600" textDecoration="none">
+                      <>
+                        {tool.title}
+
+                      </>
+                    </Heading>
+                  </Flex>
+                  <Text fontSize="2xl" color="gray.500" >{tool.description}</Text>
+                  <Box mt="4">
+                    <Link href={tool.link} isExternal={tool.isExternal} _hover={{ textDecoration: 'none' }}>
+                      <Button mr="2" fontWeight="400" variant="outline" colorScheme="brand">View {tool.isExternal && (<Image src=" /assets/external-brand.svg" htmlWidth="15px" display="inline-block" position="relative" bottom="0px" ml="2" />)}</Button>
+                    </Link>
+                    <Link href={tool.source} isExternal={tool.isExternal} _hover={{ textDecoration: 'none' }}>
+                      {tool.source && <Button fontWeight="400" variant="ghost" colorScheme="brand">Source</Button>}
+                    </Link>
                   </Box>
-                </Flex>
-              </LinkBox>
-            </Link>
+                </Box>
+              </Flex>
+            </LinkBox>
           </GridItem>
         ))}
       </Grid>
