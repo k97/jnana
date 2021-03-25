@@ -11,9 +11,7 @@ ogImage:
   url: "/assets/blog/shell-grunt/cover.png"
 ---
 
-CricHQ is a scoring platform automated the process of scoring and organizing cricketing tournaments. I worked with CricHQ as an interface designer for the mobile apps and worked with the engineering team on the web app.
-> CricHQ is a scoring platform automated the process of scoring and organizing cricketing tournaments. I worked with CricHQ as an interface designer for the mobile apps and worked with the engineering team on the web app.
-> CricHQ is an automated scoring platform that redefines the scoring and organizing cricketing tournaments. I worked with CricHQ as an interface designer for the mobile apps and worked with the engineering team on the web app.
+> CricHQ is an automated cricket scoring platform that redefines the scoring and organizing cricketing tournaments. I worked with CricHQ as an interface designer for the mobile apps and worked with the engineering team on the web app.
 
 ## Design workflow
 

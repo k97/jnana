@@ -11,9 +11,6 @@ ogImage:
   url: "/assets/blog/shell-grunt/cover.png"
 ---
 
-## Overview
-
-Since the product workflows were heavily form based, my goal was to work on overall improvement of user experience and create new features around how the forms were handled so that the time spent on capturing data is optimised with minimal errors. I also worked in close collaboration with engineering team to building the document editor and setting up the design system.
 > My goal at FastTrack360 as a Product Designer, was to work on overall improvement of user experience and create new ways to handle forms so that the time spent on capturing information is optimised with minimal errors. I also worked in close collaboration with engineering team to building the document editor and setting up the design system.
 
 ## Design process

@@ -4,7 +4,8 @@ import Providers from 'next-auth/providers';
 
 const isCorrectCredentials = (credentials: any) => {
   const passphraseReferences: any = ['apollo', 'helvetica', 'moonshot', 'shazam'];
-  return passphraseReferences.includes(credentials.username);
+  const username: string = credentials.username.toLowerCase();
+  return passphraseReferences.includes(username);
 }
 
 const options = {
