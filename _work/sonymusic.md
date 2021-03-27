@@ -23,6 +23,7 @@ I was responsible for the design of the interfaces and I started off with unders
 ![Test Results](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/sony/2.png)
 
 </div>
+
 ### User Interface
 
 I later synthesised these design iterations and broke down the features set with the engineering and the stakeholder team members to identify release candidates. Each release candidates were then iterated with different mock data and user validations in the form of geolocation testing and localisation inputs. Once the designs were then validated, I worked with the engineering team to develop the release candidates to accomodate the multi-device support in terms of responsive interfaces and performance optimisations to deliver a seamless experience.
@@ -38,7 +39,8 @@ I later synthesised these design iterations and broke down the features set with
 ![Test Results](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/sony/3.png)
 
 </div>
-### What I learnt?
+
+### What did I learn?
 
 - Multilingual support involving different languages was a hard problem to solve when working with mutli-device support.
 - Geolocation features took us multiple iteration to provide a seamless experience with application.

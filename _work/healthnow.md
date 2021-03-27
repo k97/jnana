@@ -38,5 +38,5 @@ We then approached the visual design with prototyping the screens. We validated 
 # What did I learn?
 
 1. Reverse engineering a design system for an existing mobile application helps identify the experience problems that could be easily tied back to basic laws of UX.
-2. Creating a design critique culture within the product team to identify and capitalise on product feedback improved our feedback cycle timings.
-3. Selecting a right sample size with user testing was always important since the sample size sometime not represent the actual market feedback and improving on the test suite for the product is a progressive challenge.
+2. Creating a design critique culture within the product team to identify and capitalize on product feedback improved our feedback cycle timings.
+3. Selecting a right sample size with user testing was always important, since the sample size sometimes may not represent the actual market feedback and improving on the test suite for the product is a progressive challenge.

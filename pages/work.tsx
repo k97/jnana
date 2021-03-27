@@ -36,17 +36,6 @@ const Work = ({ allWork }: Props) => {
         <title>Work - {CMS_NAME}</title>
       </Head>
       <Container maxW="container.xl">
-        {isAlertVisible && (
-          <Alert status="warning" variant="subtle" mt={75} borderWidth="0px" rounded="lg" boxShadow="md" pt="3" pb="4" pr="6" pl="6">
-            <Box flex="1">
-              <Heading as="h3" fontSize="2xl" fontWeight="600">Update:</Heading>
-              <Text fontSize="xl" mt={2}>
-                Personal projects are hard to juggle with day jobs and I'm trying my best to fit in all my projects soon, please check again later.
-              </Text>
-            </Box>
-            <CloseButton position="absolute" right="10px" top="10px" onClick={() => setAlertVisibility(false)} />
-          </Alert>
-        )}
 
 
         <Heading as="h2" fontSize="4xl" fontWeight="800" color="gray.700" mt={6} >Select Projects</Heading>
