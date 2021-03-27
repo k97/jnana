@@ -10,7 +10,10 @@
   blockquote {
     color: var(--chakra-colors-gray-600);
     border-radius: 10px;
-    margin: 1.0rem 0 2.0rem;
+
+    margin-top: var(--chakra-space-4);
+    margin-bottom: var(--chakra-space-8);
+
     font-size: var(--chakra-fontSizes-3xl);
     line-height: var(--chakra-lineHeights-tall);
   }
@@ -26,39 +29,30 @@
     font-weight: 700;
     margin-bottom: 0;
     padding-bottom: 0;
+    color: var(--chakra-colors-gray-600);
   }
 
-  // h1 {
-  //   font-size: 2em;
-  // }
+  h1 {
+    font-size: var(--chakra-fontSizes-4xl);
+  }
 
+  h2 {
+    font-size: var(--chakra-fontSizes-3xl);
+  }
 
+  h3 {
+    font-size: var(--chakra-fontSizes-2xl);
+    color: var(--chakra-colors-gray-500);
+  }
 
-  // h2 {
-  //   font-size: 1.5em;
-  // }
-
-  // h3 {
-  //   font-size: 1.25em;
-  // }
-
-  // h4 {
-  //   font-size: 1em;
-  // }
-
-  // h5 {
-  //   font-size: .875em;
-  // }
-
-  // h6 {
-  //   font-size: .85em;
-  // }
   p,
   figure {
     display: block;
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 2.0rem;
+    // margin-top: 0;
+    // padding-top: 0;
+    // margin-bottom: 2.0rem;
+    margin-top: var(--chakra-space-1);
+    margin-bottom: var(--chakra-space-8);
 
     figcaption {
       text-align: center;
@@ -67,8 +61,13 @@
 
   ol,
   ul {
-    padding-left: 2em;
+    list-style-type: initial;
+    margin-left: 1em;
+    margin-top: var(--chakra-space-4);
+    font-size: var(--chakra-fontSizes-2xl);
+    line-height: var(--chakra-lineHeights-tall);
   }
+
 
   img {
     cursor: zoom;

@@ -1,14 +1,17 @@
 import { MouseEvent } from 'react';
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useState, useEffect } from "react";
 import { Container, Center, Flex, Box, Text, Spacer, Switch, FormControl, FormLabel, Tooltip, Image, Button } from "@chakra-ui/react"
 import { signOut, useSession } from 'next-auth/client';
 import { useToast } from "@chakra-ui/react";
 
-const Header = () => {
+const Header = ({ href, children }: any) => {
+  const router = useRouter()
   const [session, loading]: any = useSession();
   const toast = useToast();
 
+  // className={router.pathname == "/about" ? "active" : ""}
   const onLockProjects = (e: any) => {
     toast({
       title: "Projects locked",
@@ -22,7 +25,7 @@ const Header = () => {
 
   return (
     <Container maxW="container.xl" pt={4} pb="4" pr="0" pl="0">
-      <Flex className="header-background" borderWidth="1px" borderColor="gray.100" rounded="lg" boxShadow="lg" zIndex="docked"  >
+      <Flex className="header-background" maxWidth="container.xl" position="fixed" right="0" left="0" margin="0 auto" borderWidth="1px" borderColor="gray.100" rounded="lg" boxShadow="lg" zIndex="docked"  >
         <Box pt="5" pb="5" pl="5" >
           <Link href="/">
             <Center cursor="pointer">
