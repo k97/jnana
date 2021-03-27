@@ -83,7 +83,7 @@ const work = ({ work }: Props) => {
                     <Image src={work.coverImage} alt={`Cover Image for ${work.title}`} rounded="2xl" width="120px" mr="4" />
                   </Center>
                   <Box flex="1">
-                    <Heading fontSize="5xl" color="gray.600" fontWeight="900" pt="5" pb="5" letterSpacing="-1.05px">{work.title}</Heading>
+                    <Heading fontSize="5xl" color="gray.700" fontWeight="900" pt="5" pb="5" letterSpacing="-1.05px">{work.title}</Heading>
                   </Box>
                 </Flex>
 

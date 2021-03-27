@@ -32,8 +32,8 @@ const About = () => {
 
             <Divider mt="50" />
 
-            <Heading as="h2" fontSize="3xl" fontWeight="700" mt={50} color="gray.700">I provide useful design solutions through:</Heading>
-            <UnorderedList mt="5" fontSize="2xl">
+            <Heading as="h2" color="gray.600" fontSize="3xl" fontWeight="700" mt={50}>I provide useful design solutions through:</Heading>
+            <UnorderedList mt="5" fontSize="2xl" lineHeight="tall">
               <ListItem>Ideation, research and synthesis</ListItem>
               <ListItem>Prototyping and UX testing</ListItem>
               <ListItem>UX/UI design</ListItem>

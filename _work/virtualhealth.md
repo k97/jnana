@@ -17,7 +17,7 @@ ogImage:
 
 > Telstra Health’s Virtual Health service offering is powered by a suite of products that are used by patients and healthcare providers. I helped identify the touchpoints and designed the products that deliver value through the virtual health experience: from patient onboarding all the way till service delivery.
 
-# The Design Team
+## The Design Team
 
 As the lead designer, or senior designer if you will, my role has evolved over time as we’ve expanded our design team at Virtual Clinical Solutions. We worked through the product aspects in our adapted version of the design sprint and delivered these iterated features through a development sprint. The working model is very close to a functional double-diamond with our own interpretation of the intersection with product test & validation strategies.
 
@@ -29,7 +29,7 @@ We discussed the vision of the product and the value creation in multiple worksh
 
 ![Service Blueprint Design](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/service-bp.png)
 
-# User Interface
+## User Interface
 
 Once we mapped out the data and started to construct themes for the product, we then proceeded to workout few different hypothesis to create a story and then proceeded to validate these stories through screens and flows. The validation methods varies from clinical testing, workflow inquiries with clinical staff. We collected data in simple formats to validate our findings and initial assumptions. With this information, I also continued to focus on the product evolution on how each feature will be presented in the right context.
 
@@ -39,7 +39,7 @@ Once we mapped out the data and started to construct themes for the product, we 
 
 </div>
 
-# Development
+### Development
 
 Large part of my time was spent on product development, leading the design of the interfaces and figuring out what we should build and how we should design it.
 
@@ -52,19 +52,19 @@ Large part of my time was spent on product development, leading the design of th
 
 </div>
 
-## Design system
+### Design system
 
 Telstra Health’s larger design team founded a design system and I continued to contribute to it, in addition to leading the design of Virtual Clinical Solutions. It was truly a team effort! So many people at Telstra Health contributed through different means and helped build the design system, internally called “DNA”.
 
-## Component
+### Component
 
 Apart from the micro components from the DNA design system, I formulated a repository of product-components which was useful to scale with our design process. The learnings from designing these components were then translated to engineering a component in the React code with the team and a future state workflow for product components was drafted with the DNA team. We achieved this through several design-handover sessions and iterations.
 
-# Delivery
+## Delivery
 
 The feature transition from design to development and then planning out an end-to-end workflow gave us confidence with our solution for the products. After hours of development and testing by the team we were able to release these products eventually and see it perform in the market through feedback and analytics.
 
-# What did I learn?
+## What did I learn?
 
 There were several challenges during the design phase of these products:
 

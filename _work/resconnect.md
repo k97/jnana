@@ -19,11 +19,9 @@ ogImage:
 
 ## Overview
 
-The goal of this project was to revamp the existing desktop client into a web product and deliver an first hand booking experience for the callers.
+The project goal was to revamp the existing desktop client into a web product and deliver an first hand booking experience for the callers through telephonic conversation.
 
 ![](https://s3-ap-southeast-2.amazonaws.com/k97static/project-snaps/ssui-2-search.png)
-
-![](https://s3-ap-southeast-2.amazonaws.com/k97static/project-snaps/ssui-3-payments.png)
 
 ## Design Sprint
 
@@ -33,13 +31,15 @@ Redesigning and building a product in a large organisation has its own intricaci
 
 We approached the designs using Google Material Design guidelines after multiple user test validations with different design styleguides. I collaborated with the UX research team to identify user touchpoints and visualise them as design concepts or prototypes.
 
+![](https://s3-ap-southeast-2.amazonaws.com/k97static/project-snaps/ssui-3-payments.png)
+
+![Layout](https://s3-ap-southeast-2.amazonaws.com/k97static/project-snaps/ssui-4-xray-components.png)
+
 The prototypes were later put into test stages and we planned out the test scripts to validate product assumptions. The engagement of the users were a key factor to collect quantitative test data for further design iterations.
 
 ### Components
 
 Even though material design language was at its infancy , the solid documentation base allowed us to empathise the idea and further extend our interpretation of several new components. I designed these new custom components that were not part of the initial material design releases. Some of these custom components were Accordions, Form Steppers, range sliders, file-upload interface, etc. The design specs were formulated after much deliberation on design and interaction prototypes and after validating their usage on functional modules.
-
-![Layout](https://s3-ap-southeast-2.amazonaws.com/k97static/project-snaps/ssui-4-xray-components.png)
 
 ### Engineering
 
