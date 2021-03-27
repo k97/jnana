@@ -12,7 +12,7 @@ author:
   madewith: Sketch, UXPin, InVision
   product: Web platform
 ogImage:
-  url: "/assets/blog/shell-grunt/cover.png"
+  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/blog/shell-grunt/cover.png"
 ---
 
 > The Emirates Connect, also known as ResConnect was the first major project I contributed as UX Engineer back in 2015. Since Emirates Airlines is one of the largest operator of passenger aircrafts in the world, a sizable amount of our customers book their tickets through the in-house call center.
@@ -38,8 +38,6 @@ The prototypes were later put into test stages and we planned out the test scrip
 ### Components
 
 Even though material design language was at its infancy , the solid documentation base allowed us to empathise the idea and further extend our interpretation of several new components. I designed these new custom components that were not part of the initial material design releases. Some of these custom components were Accordions, Form Steppers, range sliders, file-upload interface, etc. The design specs were formulated after much deliberation on design and interaction prototypes and after validating their usage on functional modules.
-
-![COMPONENT STYLEGUIDE](https://s3-ap-southeast-2.amazonaws.com/k97static/project-snaps/ssui-component.jpg)
 
 ![Layout](https://s3-ap-southeast-2.amazonaws.com/k97static/project-snaps/ssui-4-xray-components.png)
 

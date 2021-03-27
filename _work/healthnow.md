@@ -12,7 +12,7 @@ author:
   madewith: Figma, Zeplin, Xamarin
   product: iOS, Android
 ogImage:
-  url: "/assets/blog/shell-grunt/cover.png"
+  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/blog/shell-grunt/cover.png"
 ---
 
 > HealthNow has been part of Virtual Clinical Solutions officially since 2019. I was the product designer taking care of the mobile apps to the supporting web app and the store assets that included the logos, the communique messages that were dispatched through the product.
@@ -37,6 +37,6 @@ We then approached the visual design with prototyping the screens. We validated 
 
 # What did I learn?
 
-1. Reverse engineering a design system for an existing mobile application helps identify the experience problems that could be easily tied back to basic laws of UX.
-2. Creating a design critique culture within the product team to identify and capitalize on product feedback improved our feedback cycle timings.
-3. Selecting a right sample size with user testing was always important, since the sample size sometimes may not represent the actual market feedback and improving on the test suite for the product is a progressive challenge.
+- Reverse engineering a design system for an existing mobile application helps identify the experience problems that could be easily tied back to basic laws of UX.
+- Creating a design critique culture within the product team to identify and capitalize on product feedback improved our feedback cycle timings.
+- Selecting a right sample size with user testing was always important, since the sample size sometimes may not represent the actual market feedback and improving on the test suite for the product is a progressive challenge.

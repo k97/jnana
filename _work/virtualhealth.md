@@ -12,7 +12,7 @@ author:
   madewith: Figma, Zeplin, React, NextJS
   product: iOS, Android and Web
 ogImage:
-  url: "/assets/blog/shell-grunt/cover.png"
+  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/blog/shell-grunt/cover.png"
 ---
 
 > Telstra Health’s Virtual Health service offering is powered by a suite of products that are used by patients and healthcare providers. I helped identify the touchpoints and designed the products that deliver value through the virtual health experience: from patient onboarding all the way till service delivery.
@@ -22,12 +22,6 @@ ogImage:
 As the lead designer, or senior designer if you will, my role has evolved over time as we’ve expanded our design team at Virtual Clinical Solutions. We worked through the product aspects in our adapted version of the design sprint and delivered these iterated features through a development sprint. The working model is very close to a functional double-diamond with our own interpretation of the intersection with product test & validation strategies.
 
 ![Design Process](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/process.png)
-
-<div class="work-full-img work-img-border">
-
-![Test Results](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/test1.png)
-
-</div>
 
 ## Concept & development
 
@@ -41,10 +35,7 @@ Once we mapped out the data and started to construct themes for the product, we 
 
 <div class="work-full-img work-img-border">
 
-![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/1.png)
-![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/2.png)
-![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/4.png)
-![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/5.png)
+![Test Results](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/test1.png)
 
 </div>
 
@@ -52,13 +43,22 @@ Once we mapped out the data and started to construct themes for the product, we 
 
 Large part of my time was spent on product development, leading the design of the interfaces and figuring out what we should build and how we should design it.
 
+<div class="work-full-img work-img-border">
+
+![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/1.png)
+![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/2.png)
+![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/4.png)
+![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/5.png)
+
+</div>
+
 ## Design system
 
 Telstra Health’s larger design team founded a design system and I continued to contribute to it, in addition to leading the design of Virtual Clinical Solutions. It was truly a team effort! So many people at Telstra Health contributed through different means and helped build the design system, internally called “DNA”.
 
 ## Component
 
-Apart from the micro components from the DNA design system, I formulated a repository of product-components which was most impactful with our design deliverables. The learnings from designing these components were then translated to engineering a component in the React code with the team. We achieved this through several design-handover sessions and iterations.
+Apart from the micro components from the DNA design system, I formulated a repository of product-components which was useful to scale with our design process. The learnings from designing these components were then translated to engineering a component in the React code with the team and a future state workflow for product components was drafted with the DNA team. We achieved this through several design-handover sessions and iterations.
 
 # Delivery
 

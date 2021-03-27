@@ -9,7 +9,7 @@ author:
   tags: Interface Design, RWD
   role: Interface Designer
 ogImage:
-  url: "/assets/blog/shell-grunt/cover.png"
+  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/blog/shell-grunt/cover.png"
 ---
 
 > The Sony music royalty app was used by music producers and creators to manage their project contracts and track their earning across the globe. The project was conceived as finance management app with a geolocation based features to engage audience from different European countries, Germany, Spain, France and United Kingdom.
