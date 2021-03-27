@@ -8,7 +8,7 @@ author:
   private: false
   tags: Product design, Mobile apps
 ogImage:
-  url: "/assets/blog/shell-grunt/cover.png"
+  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/blog/shell-grunt/cover.png"
 ---
 
 > CricHQ is an automated cricket scoring platform that redefines the scoring and organizing cricketing tournaments. I worked with CricHQ as an interface designer for the mobile apps and worked with the engineering team on the web app.

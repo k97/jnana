@@ -12,7 +12,7 @@ author:
   madewith: Sketch, UXPin, InVision
   product: Web platform
 ogImage:
-  url: "/assets/blog/shell-grunt/cover.png"
+  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/blog/shell-grunt/cover.png"
 ---
 
 > The Emirates Connect, also known as ResConnect was the first major project I contributed as UX Engineer back in 2015. Since Emirates Airlines is one of the largest operator of passenger aircrafts in the world, a sizable amount of our customers book their tickets through the in-house call center.
