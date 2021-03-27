@@ -71,7 +71,7 @@ const work = ({ work }: Props) => {
           ? (<CircularProgress size="100px" thickness="4px" isIndeterminate />)
           : (
             (work.author.private && !session) ? (
-              <Center h="400px"><CircularProgress size="100px" thickness="4px" isIndeterminate /></Center>
+              <Center h="300px"><CircularProgress size="100px" thickness="4px" isIndeterminate /></Center>
             ) : (
               <>
                 <Link href="/work">
@@ -79,15 +79,15 @@ const work = ({ work }: Props) => {
                 </Link>
 
                 <Flex mt="5">
-                  <Center>
-                    <Image src={work.coverImage} alt={`Cover Image for ${work.title}`} rounded="2xl" width="120px" mr="4" />
+                  <Center display={{ base: "none", sm: "none", md: "inherit" }} >
+                    <Image src={work.coverImage} alt={`Cover Image for ${work.title}`} rounded="2xl" mr="4" width={{ sm: "0px", lg: "120px" }} />
                   </Center>
                   <Box flex="1">
-                    <Heading fontSize="5xl" color="gray.700" fontWeight="900" pt="5" pb="5" letterSpacing="-1.05px">{work.title}</Heading>
+                    <Heading fontSize={{ sm: "2xl", md: "5xl" }} color="gray.700" fontWeight="900" pt="5" pb="5" letterSpacing="-1.05px">{work.title}</Heading>
                   </Box>
                 </Flex>
 
-                <Box mt="5" fontSize="2xl">
+                <Box mt="5" fontSize={{ sm: "xl", md: "2xl" }}>
                   <div className="markdown-content" ref={contentRef} onClick={handleToggleBody} dangerouslySetInnerHTML={{ __html: work.content }} />
                 </Box>
               </>

@@ -32,27 +32,23 @@ const WorkTools = () => {
   const yearVal = new Date().getFullYear();
   return (
     <>
-      <Heading as="h2" fontSize="4xl" fontWeight="800" mt={75} color="gray.700" >Tools</Heading>
-      <Text fontSize="xl" fontWeight="400" mt={2} color="gray.600" >A list of tools that I have designed to facilitate any design workflows</Text>
       <Grid gap={8} mt="6">
         {toolCollection.map((tool: any) => (
           <GridItem>
-
             <LinkBox as="article" p="6" borderWidth="1px" borderColor="gray.100" rounded="lg" cursor="pointer" _hover={{ rounded: "xl", textDecoration: 'none', shadow: "2xl", borderColor: "brand.50" }}>
               <Flex>
-                <Center width="120px" mr="5" >
+                <Center display={{ base: "none", sm: "none", md: "inherit" }} width="120px" mr="5" >
                   {tool.cover && <Image src={tool.cover} alt={`Cover Image for ${tool.cover}`} rounded="2xl" />}
                 </Center>
                 <Box flex="1" >
                   <Flex mb="2" >
-                    <Heading fontSize="2xl" fontWeight="600" color="gray.600" textDecoration="none">
+                    <Heading fontSize={{ sm: "xl", md: "2xl" }} fontWeight="600" color="gray.600" textDecoration="none">
                       <>
                         {tool.title}
-
                       </>
                     </Heading>
                   </Flex>
-                  <Text fontSize="2xl" color="gray.500" >{tool.description}</Text>
+                  <Text fontSize={{ sm: "lg", md: "2xl" }} color="gray.500" >{tool.description}</Text>
                   <Box mt="4">
                     <Link href={tool.link} isExternal={tool.isExternal} _hover={{ textDecoration: 'none' }}>
                       <Button mr="2" fontWeight="400" variant="outline" colorScheme="brand">View {tool.isExternal && (<Image src=" /assets/external-brand.svg" htmlWidth="15px" display="inline-block" position="relative" bottom="0px" ml="2" />)}</Button>

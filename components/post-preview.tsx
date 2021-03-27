@@ -25,14 +25,14 @@ const PostPreview = ({
   return (
     <Box color="gray.600" _hover={{ background: 'brand.50', rounded: "xl", shadow: "sm" }}>
       <Link as={`/articles/${slug}`} href={`/articles/${slug}`}>
-        <Heading as="h3" fontSize="2xl" fontWeight="600" pt="35" mb="2" cursor="pointer">{title}</Heading>
+        <Heading as="h3" fontSize={{ sm: "xl", md: "2xl" }} fontWeight="600" pt="35" mb="2" cursor="pointer">{title}</Heading>
       </Link>
       <Text fontSize="lg" mb="2">
         <DateFormater dateString={date} />
       </Text>
       <Link as={`/articles/${slug}`} href={`/articles/${slug}`} >
         <>{coverImage && <CoverImage slug={slug} title={title} src={coverImage} />}
-          <Text fontSize="2xl" mb="0" cursor="pointer">{excerpt}</Text></>
+          <Text fontSize={{ sm: "xl", md: "2xl" }} mb="0" cursor="pointer">{excerpt}</Text></>
       </Link>
 
       <Divider orientation="horizontal" pb="35" />

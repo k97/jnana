@@ -36,26 +36,25 @@ const Work = ({ allWork }: Props) => {
         <title>Work - {CMS_NAME}</title>
       </Head>
       <Container maxW="container.xl">
+        <Box>
+          <Heading as="h2" fontSize={{ sm: "2xl", md: "4xl" }} fontWeight="800" color="gray.700" mt={6} >Select Projects</Heading>
+          <Text fontSize={{ sm: "lg", md: "xl" }} fontWeight="400" mt={2} color="gray.600" >A curated list of projects that I have designed and developed over the years</Text>
 
-
-        <Heading as="h2" fontSize="4xl" fontWeight="800" color="gray.700" mt={6} >Select Projects</Heading>
-        <Text fontSize="xl" fontWeight="400" mt={2} color="gray.600" >A curated list of projects that I have designed and developed over the years</Text>
-
-
-        <Grid gap={8} mt="20px">
-          {allWork.map((work: any) => (
-            <WorkPreview
-              key={work.slug}
-              title={work.title}
-              coverImage={work.coverImage}
-              slug={work.slug}
-              excerpt={work.excerpt}
-              locked={work.author.private}
-              tags={work.author.tags}
-              sessionStatus={isActiveSession}
-            />
-          ))}
-        </Grid>
+          <Box gap={8} mt="20px">
+            {allWork.map((work: any) => (
+              <WorkPreview
+                key={work.slug}
+                title={work.title}
+                coverImage={work.coverImage}
+                slug={work.slug}
+                excerpt={work.excerpt}
+                locked={work.author.private}
+                tags={work.author.tags}
+                sessionStatus={isActiveSession}
+              />
+            ))}
+          </Box>
+        </Box>
       </Container>
     </Layout >
   )
