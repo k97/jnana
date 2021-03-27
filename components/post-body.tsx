@@ -7,7 +7,7 @@ type Props = {
 
 const PostBody = ({ content }: Props) => {
   return (
-    <Box fontSize="2xl" mt="50">
+    <Box fontSize={{ sm: "xl", md: "2xl" }} mt="50">
       <div
         className="markdown-content"
         dangerouslySetInnerHTML={{ __html: content }}

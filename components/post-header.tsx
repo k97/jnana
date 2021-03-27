@@ -15,13 +15,13 @@ type Props = {
 const PostHeader = ({ title, coverImage, date, author }: Props) => {
   return (
     <>
-      <Center height="100px">
-        <Heading fontSize="4xl" fontWeight="900" >
+      <Center height={{ base: "50px", sm: "50px", md: "50px" }} >
+        <Heading fontSize={{ sm: "2xl", md: "4xl" }} fontWeight="900" >
           {title}
         </Heading>
       </Center >
       <Center>
-        <Text fontSize="xl">
+        <Text fontSize={{ sm: "lg", md: "xl" }}>
           <DateFormater dateString={date} />
         </Text>
       </Center >
