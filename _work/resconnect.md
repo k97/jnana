@@ -39,8 +39,6 @@ The prototypes were later put into test stages and we planned out the test scrip
 
 Even though material design language was at its infancy , the solid documentation base allowed us to empathise the idea and further extend our interpretation of several new components. I designed these new custom components that were not part of the initial material design releases. Some of these custom components were Accordions, Form Steppers, range sliders, file-upload interface, etc. The design specs were formulated after much deliberation on design and interaction prototypes and after validating their usage on functional modules.
 
-![COMPONENT STYLEGUIDE](https://s3-ap-southeast-2.amazonaws.com/k97static/project-snaps/ssui-component.jpg)
-
 ![Layout](https://s3-ap-southeast-2.amazonaws.com/k97static/project-snaps/ssui-4-xray-components.png)
 
 ### Engineering
