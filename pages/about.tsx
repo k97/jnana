@@ -42,7 +42,7 @@ const About = () => {
               <ListItem>Product strategy</ListItem>
             </UnorderedList>
 
-            <Text mt="5">for mobile apps, web apps and websites, or any digital products.</Text>
+            <Text mt="5" fontWeight="bold" color="gray.600">for mobile apps, web apps and websites, or any digital products.</Text>
 
           </Box>
 
