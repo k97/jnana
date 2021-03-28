@@ -27,7 +27,7 @@ const About = () => {
             <Text mb="8" color="gray.600">If you are looking for my resume, <a href={GOOGLE_DRIVE_RESUME} target="_blank">it's here ↗</a>.</Text>
 
             <Link href={GOOGLE_DRIVE_RESUME_DOWNLOAD} _hover={{ textDecoration: 'none' }}>
-              <Button colorScheme="brand" fontSize={{ sm: "xl", md: "3xl" }} size="lg" shadow="xl" ml="2" _hover={{ shadow: "sm", background: "brand.400" }} >Download Resume</Button>
+              <Button colorScheme="brand" fontSize="xl" size="lg" shadow="xl" ml="2" _hover={{ shadow: "sm", background: "brand.400" }} >Download Resume</Button>
             </Link>
 
             <Divider mt="50px" />

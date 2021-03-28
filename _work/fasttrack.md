@@ -15,7 +15,14 @@ ogImage:
 
 ## Design process
 
-I engaged with the business stakeholders and the product service team to establish a feedback loop for the new features. We setup multiple sessions with the end-users to gorilla test the features and review the iterations. I setup analytics for user behavioural tracking and we consolidated all this data to identify and work on possible business opportunities within the product.
+The FastTrack360 backoffice product was built on a legacy Microsoft Silverlight solution. We along with a the product team were responsible for redesigning the product workflow into a cloud-based web product. I was responsible for the new workflows and we started off with product research and synthesis. The features were mapped into different deliverable module, which could then be user tested through the customer-engagement team and the feedback cycle was established within the product releases. We also setup user analytics to track behavioral workflows and consolidated all this data to identify and work on possible business opportunities within the product.
+
+<div class="work-full-img work-img-border">
+
+![Design System](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/ft/0.png)
+
+</div>
+As the lead product designer, I engaged with the business stakeholders and the product service team to setup a new design system to scale the new features across the product with a quicker feedback loop. The design system initiated was purely a team effort to consolidate the existing micro-components across the product and establish a generalized interface and delivering a seamless end-user experience. Several product concepts were designed and iterated to progress the conversation and deliver these enhanced user experience.
 
 <div class="work-full-img work-img-border">
 
