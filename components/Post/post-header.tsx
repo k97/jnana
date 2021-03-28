@@ -1,8 +1,7 @@
-import Avatar from './avatar'
-import DateFormater from './date-formater'
-import CoverImage from './cover-image'
+import DateFormater from '../date-formater'
+import CoverImage from '../cover-image'
 import PostTitle from './post-title'
-import Author from '../types/author'
+import Author from '../../types/author'
 
 import { Center, Heading, Text } from "@chakra-ui/react"
 type Props = {
