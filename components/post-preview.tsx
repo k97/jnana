@@ -3,7 +3,7 @@ import DateFormater from './date-formater'
 import CoverImage from './cover-image'
 import Link from 'next/link'
 import Author from '../types/author'
-import { Heading, Text, Divider, Box } from '@chakra-ui/react';
+import { Heading, Text, Divider, Box, useColorModeValue } from '@chakra-ui/react';
 
 type Props = {
   title: string
@@ -22,17 +22,18 @@ const PostPreview = ({
   author,
   slug,
 }: Props) => {
+  const backgroundHoverColor = useColorModeValue("brand.50", "gray.700");
   return (
-    <Box color="gray.600" _hover={{ background: 'brand.50', rounded: "xl", shadow: "sm" }}>
+    <Box _hover={{ background: backgroundHoverColor, rounded: "xl", shadow: "sm" }}>
       <Link as={`/articles/${slug}`} href={`/articles/${slug}`}>
-        <Heading as="h3" fontSize={{ sm: "xl", md: "2xl" }} fontWeight="600" pt="35" mb="2" cursor="pointer">{title}</Heading>
+        <Heading as="h3" fontSize={{ sm: "xl", md: "2xl" }} fontWeight="600" pt="35" mb="2" cursor="pointer" opacity="0.85">{title}</Heading>
       </Link>
-      <Text fontSize="lg" mb="2">
+      <Text fontSize="lg" mb="2" opacity="0.65">
         <DateFormater dateString={date} />
       </Text>
       <Link as={`/articles/${slug}`} href={`/articles/${slug}`} >
         <>{coverImage && <CoverImage slug={slug} title={title} src={coverImage} />}
-          <Text fontSize={{ sm: "xl", md: "2xl" }} mb="0" cursor="pointer">{excerpt}</Text></>
+          <Text fontSize={{ sm: "xl", md: "2xl" }} mb="0" cursor="pointer" opacity="0.75">{excerpt}</Text></>
       </Link>
 
       <Divider orientation="horizontal" pb="35" />

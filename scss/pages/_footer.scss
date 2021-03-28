@@ -4,12 +4,19 @@
   opacity: 0.65;
   transition: all 0.25s linear;
 
-  @media screen and (prefers-color-scheme: dark) {
-    // opacity: 0.55;
-    // filter: invert(1);
-  }
+
 
   &:hover {
     opacity: 1;
   }
+}
+
+.chakra-ui-dark .footer-img,
+.chakra-ui-dark .work-lock-icon {
+  opacity: 0.55;
+  filter: invert(1);
+}
+
+.chakra-ui-dark .external-tools-icon {
+  filter: invert(1);
 }

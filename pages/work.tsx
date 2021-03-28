@@ -37,8 +37,8 @@ const Work = ({ allWork }: Props) => {
       </Head>
       <Container maxW="container.xl">
         <Box>
-          <Heading as="h2" fontSize={{ sm: "2xl", md: "4xl" }} fontWeight="800" color="gray.700" mt={6} >Select Projects</Heading>
-          <Text fontSize={{ sm: "lg", md: "xl" }} fontWeight="400" mt={2} color="gray.600" >A curated list of projects that I have designed and developed over the years</Text>
+          <Heading as="h2" fontSize={{ sm: "2xl", md: "4xl" }} fontWeight="800" mt={6} opacity="0.9">Select Projects</Heading>
+          <Text fontSize={{ sm: "lg", md: "xl" }} fontWeight="400" mt={2} opacity="0.6" >A curated list of projects that I have designed and developed over the years</Text>
 
           <Box gap={8} mt="20px">
             {allWork.map((work: any) => (

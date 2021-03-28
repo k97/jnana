@@ -14,7 +14,7 @@ const HeroIntro = () => {
           <Link href="/about">
             <Button colorScheme="brand" fontSize="xl" size="lg" shadow="xl" _hover={{ shadow: "sm", background: "brand.400" }} >More about me</Button>
           </Link>
-          <Text fontSize={{ sm: "xl", md: "2xl" }} mt="6">See few of my selective <Link href="/work"><a>work here</a></Link>, or If you want to read some interesting collation of <Link href="/articles"><a>articles here</a></Link>.</Text>
+          <Text fontSize={{ sm: "xl", md: "2xl" }} mt="6">See few of my selective <Link href="/work" ><a>work here</a></Link>, or If you want to read some interesting collation of <Link href="/articles"><a>articles here</a></Link>.</Text>
         </Box>
 
         <Box width={{ base: "5%", sm: "0%", md: "0%", lg: "5%" }} />

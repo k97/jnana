@@ -12,9 +12,9 @@ const Index = () => {
   return (
     <>
       <style global jsx>{`
-        html {
+        body.chakra-ui-light {
           height: 100%;
-          background-image: radial-gradient( circle 1158px at 6.4% 48.8%,  rgba(195,241,245,1) 0%, rgba(255,255,255,1) 90.2% );
+          background: radial-gradient( circle 1158px at 6.4% 48.8%,  rgba(195,241,245,1) 0%, rgba(255,255,255,1) 90.2% );
           background-position: top center;
           background-size: cover;
           background-repeat: no-repeat;

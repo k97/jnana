@@ -1,5 +1,5 @@
 
-import { Link, Heading, LinkBox, Flex, Center, Spacer, Box, Text, Image, Grid, GridItem, Button } from "@chakra-ui/react"
+import { Link, Heading, LinkBox, Flex, Center, Spacer, Box, Text, Image, Grid, GridItem, Button, useColorModeValue } from "@chakra-ui/react"
 
 const WorkTools = () => {
 
@@ -29,32 +29,38 @@ const WorkTools = () => {
     }
   ]
 
+  const borderColor = useColorModeValue("gray.100", "gray.700");
+  const borderHoverColor = useColorModeValue("brand.50", "gray.600");
+  const bgHoverColor = useColorModeValue("transparent", "gray.700");
+
+  const buttonColor = useColorModeValue("brand.500", "brand.100");
+
   const yearVal = new Date().getFullYear();
   return (
     <>
       <Grid gap={8} mt="6">
         {toolCollection.map((tool: any) => (
           <GridItem>
-            <LinkBox as="article" p="6" borderWidth="1px" borderColor="gray.100" rounded="lg" cursor="pointer" _hover={{ rounded: "xl", textDecoration: 'none', shadow: "2xl", borderColor: "brand.50" }}>
+            <LinkBox as="article" p="6" borderWidth="1px" borderColor={borderColor} rounded="lg" _hover={{ brounded: "xl", textDecoration: 'none' }}>
               <Flex>
                 <Center display={{ base: "none", sm: "none", md: "inherit" }} width="120px" mr="5" >
                   {tool.cover && <Image src={tool.cover} alt={`Cover Image for ${tool.cover}`} rounded="2xl" />}
                 </Center>
                 <Box flex="1" >
                   <Flex mb="2" >
-                    <Heading fontSize={{ sm: "xl", md: "2xl" }} fontWeight="600" color="gray.600" textDecoration="none">
+                    <Heading fontSize={{ sm: "xl", md: "2xl" }} fontWeight="600" opacity="0.85" textDecoration="none">
                       <>
                         {tool.title}
                       </>
                     </Heading>
                   </Flex>
-                  <Text fontSize={{ sm: "lg", md: "2xl" }} color="gray.500" >{tool.description}</Text>
+                  <Text fontSize={{ sm: "lg", md: "2xl" }} opacity="0.75">{tool.description}</Text>
                   <Box mt="4">
                     <Link href={tool.link} isExternal={tool.isExternal} _hover={{ textDecoration: 'none' }}>
-                      <Button mr="2" fontWeight="400" variant="outline" colorScheme="brand">View {tool.isExternal && (<Image src=" /assets/external-brand.svg" htmlWidth="15px" display="inline-block" position="relative" bottom="0px" ml="2" />)}</Button>
+                      <Button mr="2" fontWeight="400" variant="outline" color={buttonColor} borderColor={buttonColor}>View &nbsp;↗</Button>
                     </Link>
                     <Link href={tool.source} isExternal={tool.isExternal} _hover={{ textDecoration: 'none' }}>
-                      {tool.source && <Button fontWeight="400" variant="ghost" colorScheme="brand">Source</Button>}
+                      {tool.source && <Button fontWeight="400" variant="ghost" color={buttonColor}>Source</Button>}
                     </Link>
                   </Box>
                 </Box>
