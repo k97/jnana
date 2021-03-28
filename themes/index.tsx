@@ -10,12 +10,12 @@ const breakpoints = createBreakpoints({
   xl: "1200px",
 })
 
-const config = {
+const config: any = {
   initialColorMode: "light",
   useSystemColorMode: true,
 }
 
-const styles = {
+const styles: any = {
   global: (props: any) => ({
     a: {
       color: mode('brand.500', 'brand.200')(props),
