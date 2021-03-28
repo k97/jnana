@@ -2,3 +2,10 @@
   -webkit-backdrop-filter: saturate(180%) blur(40px);
   backdrop-filter: saturate(180%) blur(40px);
 }
+
+.chakra-ui-dark {
+  .klogo svg {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+}

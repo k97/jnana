@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Heading, LinkBox, LinkOverlay, Text, Image, GridItem, Spacer, Center, Flex, Box, Tooltip, HStack, Tag, TagLabel } from "@chakra-ui/react"
+import { Heading, LinkBox, LinkOverlay, Text, Image, GridItem, Spacer, Center, Flex, Box, Tooltip, HStack, Tag, TagLabel, useColorModeValue } from "@chakra-ui/react"
 
 type Props = {
   title: string
@@ -22,11 +22,17 @@ const WorkPreview = ({
 }: Props) => {
 
   const tagsCollection: any = tags ? tags.split(', ') : [];
+  const borderColor = useColorModeValue("gray.100", "gray.700");
+  const borderHoverColor = useColorModeValue("brand.50", "gray.600");
+  const bgHoverColor = useColorModeValue("transparent", "gray.700");
+
+  const tagBgColor = useColorModeValue("brand.50", "gray.600");
+  const tagTextColor = useColorModeValue("brand.400", "white.600");
 
   return (
     <Link as={`/work/${slug}`} href={`/work/${slug}`}>
 
-      <LinkBox p="6" mb="20px" borderWidth="1px" borderColor="gray.100" rounded="lg" cursor="pointer" _hover={{ rounded: "xl", textDecoration: 'none', shadow: "2xl", borderColor: "brand.50" }}>
+      <LinkBox p="6" mb="20px" borderWidth="1px" borderColor={borderColor} rounded="lg" cursor="pointer" _hover={{ background: bgHoverColor, rounded: "xl", textDecoration: 'none', shadow: "2xl", borderColor: borderHoverColor }}>
         <Flex>
 
           <Center display={{ base: "none", sm: "none", md: "inherit" }} width={{ sm: "60px", md: "120px" }} mr={{ sm: "3", md: "5" }} >
@@ -37,11 +43,11 @@ const WorkPreview = ({
 
             <Flex mb="2" >
               <Tooltip label="Private project">
-                <Heading fontSize={{ sm: "xl", md: "2xl" }} fontWeight="600" color="gray.600" textDecoration="none">
+                <Heading fontSize={{ sm: "xl", md: "2xl" }} fontWeight="600" opacity="0.85" textDecoration="none">
                   {title}
                   <>
-                    {locked && !sessionStatus && (<Image src="/assets/lock.svg" htmlWidth="14px" opacity="0.65" display="inline-block" position="relative" bottom="3px" ml="3" />)}
-                    {locked && sessionStatus && (<Image src="/assets/unlock.svg" htmlWidth="18px" opacity="0.65" display="inline-block" position="relative" bottom="3px" ml="3" />)}
+                    {locked && !sessionStatus && (<Image src="/assets/lock.svg" className="work-lock-icon" htmlWidth="14px" opacity="0.65" display="inline-block" position="relative" bottom="3px" ml="3" />)}
+                    {locked && sessionStatus && (<Image src="/assets/unlock.svg" className="work-lock-icon" htmlWidth="18px" opacity="0.65" display="inline-block" position="relative" bottom="3px" ml="3" />)}
                   </>
                 </Heading>
               </Tooltip>
@@ -49,12 +55,12 @@ const WorkPreview = ({
 
             </Flex>
 
-            <Text fontSize={{ sm: "xl", md: "2xl" }} color="gray.500" >{excerpt}</Text>
+            <Text fontSize={{ sm: "xl", md: "2xl" }} opacity="0.75" >{excerpt}</Text>
 
             <HStack spacing={3} mt="4">
               {tagsCollection.map((tag: any) => (
-                <Tag size="md" key={tag} background="brand.50">
-                  <TagLabel color="brand.400" fontSize="md" >{tag}</TagLabel>
+                <Tag size="md" key={tag} background={tagBgColor}>
+                  <TagLabel color={tagTextColor} fontSize="md" >{tag}</TagLabel>
                 </Tag>
               ))}
             </HStack>

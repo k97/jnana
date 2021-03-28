@@ -56,7 +56,6 @@ const work = ({ work }: Props) => {
     }
   }
 
-
   return (
     <Layout>
       <Head>
@@ -83,7 +82,7 @@ const work = ({ work }: Props) => {
                     <Image src={work.coverImage} alt={`Cover Image for ${work.title}`} rounded="2xl" mr="4" width={{ sm: "0px", lg: "120px" }} />
                   </Center>
                   <Box flex="1">
-                    <Heading fontSize={{ sm: "2xl", md: "5xl" }} color="gray.700" fontWeight="900" pt="5" pb="5" letterSpacing="-1.05px">{work.title}</Heading>
+                    <Heading fontSize={{ sm: "2xl", md: "5xl" }} opacity="0.8" fontWeight="900" pt="5" pb="5" letterSpacing="-1.05px">{work.title}</Heading>
                   </Box>
                 </Flex>
 

@@ -1,6 +1,7 @@
 // theme.js
 import { extendTheme } from "@chakra-ui/react"
 import { createBreakpoints } from "@chakra-ui/theme-tools";
+import { mode } from '@chakra-ui/theme-tools';
 
 const breakpoints = createBreakpoints({
   sm: "320px",
@@ -9,9 +10,26 @@ const breakpoints = createBreakpoints({
   xl: "1200px",
 })
 
+const config = {
+  initialColorMode: "light",
+  useSystemColorMode: true,
+}
+
+const styles = {
+  global: (props: any) => ({
+    a: {
+      color: mode('brand.500', 'brand.200')(props),
+      _hover: {
+        textDecoration: "underline",
+      },
+    },
+  }),
+};
 
 const overrides = {
   breakpoints,
+  config,
+  styles,
   colors: {
     brand: {
       50: '#ddf2ff',
@@ -24,21 +42,6 @@ const overrides = {
       700: '#003b82',
       800: '#002351',
       900: '#000d21',
-    },
-  },
-  styles: {
-    global: {
-      // styles for the `body`
-      body: {
-        bg: "transparent",
-      },
-      // styles for the `a`
-      a: {
-        color: "brand.500",
-        _hover: {
-          textDecoration: "underline",
-        },
-      },
     },
   },
   fonts: {

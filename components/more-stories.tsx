@@ -12,7 +12,7 @@ type Props = {
 const MoreStories = ({ posts }: Props) => {
   return (
     <>
-      <Heading fontSize={{ sm: "xl", md: "3xl" }} fontWeight="800" mt="4" mb="2" color="gray.600">
+      <Heading fontSize={{ sm: "xl", md: "3xl" }} fontWeight="800" mt="4" mb="2" opacity="0.75">
         Previous Articles
       </Heading>
       {posts.map((post) => (

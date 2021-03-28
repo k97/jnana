@@ -23,8 +23,8 @@ const Articles = ({ allPosts }: Props) => {
       </Head>
 
       <Container maxW="container.xl">
-        <Heading as="h2" fontSize={{ sm: "2xl", md: "4xl" }} fontWeight="800" mt={75} color="gray.700">Articles & References</Heading>
-        <Text fontSize="xl" fontWeight="400" mt={2} color="gray.800" >List of journals about digital products</Text>
+        <Heading as="h2" fontSize={{ sm: "2xl", md: "4xl" }} fontWeight="800" mt={75} opacity="0.9">Articles & References</Heading>
+        <Text fontSize="xl" fontWeight="400" mt={2} opacity="0.6" >List of journals about digital products</Text>
         {heroPost && (
           <HeroPost
             title={heroPost.title}

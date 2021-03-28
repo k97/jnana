@@ -16,8 +16,8 @@ const Tools = () => {
       </Head>
       <Container maxW="container.xl">
         <Box mt="75px">
-          <Heading as="h2" fontSize={{ sm: "2xl", md: "4xl" }} fontWeight="800" mt={75} color="gray.700" >Tools</Heading>
-          <Text fontSize={{ sm: "lg", md: "xl" }} fontWeight="400" mt={2} color="gray.600" >A list of tools that I have designed to facilitate any design workflows</Text>
+          <Heading as="h2" fontSize={{ sm: "2xl", md: "4xl" }} fontWeight="800" mt={75} opacity="0.9">Tools</Heading>
+          <Text fontSize={{ sm: "lg", md: "xl" }} fontWeight="400" mt={2} opacity="0.6" >A list of tools that I have designed to facilitate any design workflows</Text>
           <WorkTools />
         </Box>
 
