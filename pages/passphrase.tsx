@@ -40,11 +40,12 @@ export default function SignIn({ csrfToken }: any) {
       </Head>
 
       <Container maxW="container.xl">
-        <Heading as="h2" size="xl" className="ff-hero" mt={50} mb={10}>Private Information</Heading>
+
+        <Heading as="h2" fontSize={{ sm: "2xl", md: "4xl" }} fontWeight="800" color="gray.700" mt={50} mb={5}>Private Information</Heading>
 
         <form method='post' action='/api/auth/callback/credentials'>
-          <Text fontSize="2xl">Please enter the passphrase to proceed to the project.</Text>
-          <FormControl width="600px">
+          <Text fontSize={{ sm: "lg", md: "2xl" }}>Please enter the passphrase to proceed to the project.</Text>
+          <FormControl maxWidth="600px">
             <Input type="hidden" name='csrfToken' defaultValue={csrfToken} />
             <Input type="text" name="username" size="lg" placeholder="*******" autoFocus isRequired variant="outline" isInvalid={isAlertVisible} />
 
@@ -60,8 +61,8 @@ export default function SignIn({ csrfToken }: any) {
         </form>
 
         <Box variant="subtle" mt={10} mb={10} borderWidth="0px" rounded="lg" boxShadow="xs" p="4">
-          <Text fontSize="xl">
-            Some of the projects are locked down in adherence to the respective NDA(s). I intend to share these work only for referential purposes. <a className="ka-link dim" href="mailto:k97@outlook.in?subject=Access to Karthik's Portfolio">Drop me a note here,</a> and I will setup you with the passphrase.
+          <Text fontSize={{ sm: "md", md: "xl" }}>
+            Some of the projects are locked down in adherence to the respective NDA(s). I intend to share these work only for referential purposes. <a className="ka-link dim" href="mailto:k97@outlook.in?subject=Access to Karthik's Portfolio">Drop me a note here,</a> and I will set you up with the passphrase.
           </Text>
         </Box>
 
