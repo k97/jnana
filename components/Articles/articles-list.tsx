@@ -2,21 +2,19 @@
 import Link from 'next/link'
 import { Heading, Text, Divider } from '@chakra-ui/react'
 
-import PostPreview from './post-preview'
-import Post from '../types/post'
+import ArticleCard from './article-card'
+import Post from '../../types/post'
 
 type Props = {
-  posts: Post[]
+  items: Post[]
 }
 
-const MoreStories = ({ posts }: Props) => {
+
+const ArticlesList = ({ items }: Props) => {
   return (
     <>
-      <Heading fontSize={{ sm: "xl", md: "3xl" }} fontWeight="800" mt="4" mb="2" opacity="0.75">
-        Previous Articles
-      </Heading>
-      {posts.map((post) => (
-        <PostPreview
+      {items.map((post) => (
+        <ArticleCard
           key={post.slug}
           title={post.title}
           coverImage={post.coverImage}
@@ -30,4 +28,4 @@ const MoreStories = ({ posts }: Props) => {
   )
 }
 
-export default MoreStories
+export default ArticlesList

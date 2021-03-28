@@ -4,14 +4,15 @@ import Head from 'next/head'
 
 import { Center, CircularProgress, Container, Heading, SimpleGrid, Box, Button } from "@chakra-ui/react"
 import { Layout } from '../../components/Layout/index'
-import PostBody from '../../components/post-body'
-import PostHeader from '../../components/post-header'
-import PostTitle from '../../components/post-title'
 
+import PostHeader from '../../components/Post/post-header'
+import PostTitle from '../../components/Post/post-title'
+import PostBody from '../../components/Post/post-body'
+
+import PostType from '../../types/post'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
-import PostType from '../../types/post'
 
 type Props = {
   post: PostType
