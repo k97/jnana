@@ -6,7 +6,7 @@ author:
   name: Karthik
   picture: "/assets/blog/authors/joe.jpeg"
 ogImage:
-  url: "/assets/blog/shell-grunt/cover.png"
+  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/metax.png"
 ---
 
 I'm doing yet another iteration on my website. Unlike the previous versions, I want the next one to hold for a longer timespan. In the coming weeks, I will be logging the process here, so it can stay as a reference material.

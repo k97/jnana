@@ -12,7 +12,7 @@ author:
   madewith: Figma, Zeplin, React, NextJS
   product: iOS, Android and Web
 ogImage:
-  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/blog/shell-grunt/cover.png"
+  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/metax.png"
 ---
 
 > Telstra Health’s Virtual Health service offering is powered by a suite of products that are used by patients and healthcare providers. I helped identify the touchpoints and designed the products that deliver value through the virtual health experience: from patient onboarding all the way till service delivery.
