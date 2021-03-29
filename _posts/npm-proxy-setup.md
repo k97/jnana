@@ -6,7 +6,7 @@ author:
   name: Karthik
   picture: "/assets/blog/authors/joe.jpeg"
 ogImage:
-  url: "/assets/blog/shell-grunt/cover.png"
+  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/metax.png"
 ---
 
 Setting up NodeJS and running npm behind corporate proxy in a windows PC was really a pain in the neck when I tried it for the first time. This post will remain as a reference for future configs. After using YO and Grunt for app development in an open network, I was under the pretext that npm works flawlessly and if at all any problem arises it was just some missing environment variables (corporate machines are usually windows PCs). After joining my new workplace, I found out straight away that its frustrating to run npm with all the proxy setups and blocked admin rights. I also remember crashing the Node with my super buffoon ingenuity while trying to some related issues issues. Trying to recall, I don’t remember exactly what made it to crash but I just did. So I raised an admin ticket and they got it going back again.

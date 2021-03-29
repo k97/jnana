@@ -1,12 +1,12 @@
 ---
-title: 'AngularJS Component & Routes'
+title: "AngularJS Component & Routes"
 excerpt: "Using the ui-router beta with ng 1.5.x component and porting the old routers to the new UI router."
-date: '2017-01-04'
+date: "2017-01-04"
 author:
   name: Karthik
-  picture: '/assets/blog/authors/joe.jpeg'
+  picture: "/assets/blog/authors/joe.jpeg"
 ogImage:
-  url: '/assets/blog/shell-grunt/cover.png'
+  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/metax.png"
 ---
 
 Using the ui-router beta with ng 1.5.x component and porting the old routers to the new UI router.

@@ -8,7 +8,7 @@ author:
   private: true
   tags: Document editor, Design systems, Product design
 ogImage:
-  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/blog/shell-grunt/cover.png"
+  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/metax.png"
 ---
 
 > My goal at FastTrack360 as a Product Designer, was to work on overall improvement of user experience and create new ways to handle forms so that the time spent on capturing information is optimised with minimal errors. I also worked in close collaboration with engineering team to building the document editor and setting up the design system.
