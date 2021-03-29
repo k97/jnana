@@ -13,8 +13,8 @@ const Footer = () => {
           </a>
         </Box>
         <Box>
-          <a href="mailto:karthik97live@gmail.com?subject=Hello Karthik!">
-            <Image src="/assets/mail-icon.svg" className="footer-img" />
+          <a href="https://www.linkedin.com/in/rajendrankarthikeyan" target="_blank">
+            <Image src="/assets/linkedin-icon.svg" className="footer-img" />
           </a>
         </Box>
         <Box>
@@ -23,8 +23,8 @@ const Footer = () => {
           </a>
         </Box>
         <Box>
-          <a href="https://www.linkedin.com/in/rajendrankarthikeyan" target="_blank">
-            <Image src="/assets/linkedin-icon.svg" className="footer-img" />
+          <a href="mailto:karthik97live@gmail.com?subject=Hello Karthik!">
+            <Image src="/assets/mail-icon.svg" className="footer-img" />
           </a>
         </Box>
       </SimpleGrid>
