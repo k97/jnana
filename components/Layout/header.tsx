@@ -8,7 +8,7 @@ import {
   Drawer, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, useDisclosure, VStack, CloseButton
 } from "@chakra-ui/react"
 
-import { KarthikLogo, SunIcon, MoonIcon, MenuList } from '../../lib/config'
+import { KarthikLogo, LockIcon, SunIcon, MoonIcon, MenuList } from '../../lib/config'
 import { signOut, useSession } from 'next-auth/client'
 
 const Header = ({ href, children }: any) => {
@@ -57,12 +57,11 @@ const Header = ({ href, children }: any) => {
     return (
       <>
         {MenuList.map((menu: any) => (
-          <> { isHomeMenu(menu) && (<Box key={menu.id} mr="4" pt="6" pb="6" pl="4" pr="4" width={props.width} className="menu-item">
-            <Link href={menu.link}>
+          <Box key={menu.id} mr="4" pt="6" pb="6" pl="4" pr="4" width={props.width} className="menu-item">
+            {isHomeMenu(menu) && (<Link href={menu.link}>
               <Text fontSize="xl" fontWeight="bold" cursor="pointer" opacity="0.95" _hover={{ color: linkColor }} color={router.pathname == menu.link ? linkColor : ""}>{menu.name}</Text>
-            </Link>
-          </Box>)
-          }</>
+            </Link>)}
+          </Box>
         ))
         }
       </>
@@ -97,13 +96,23 @@ const Header = ({ href, children }: any) => {
 
         <MenuItem isHomePageVisible={false} />
 
-        {<Box mr="2" p="6" >
+        {<Box mr="2" pt="6" pl="3" pr="3">
           <Tooltip label="Toggle Dark Mode">
             <Button size="sm" variant="ghost" onClick={toggleColorMode} fontSize="lg">
               {colorMode === "light" ? < MoonIcon /> : <SunIcon />}
             </Button>
           </Tooltip>
         </Box>}
+
+        {session && (
+          <Box mr="0" pt="6" pl="3" pr="6" >
+            <Tooltip label="Lockdown projects">
+              <Button size="sm" variant="ghost" onClick={onLockProjects} width="40px" position="relative" bottom="2px" className="lock-icon" >
+                <LockIcon />
+              </Button>
+            </Tooltip>
+          </Box>
+        )}
 
         {<Box mr="2" p="6" className="menu-hamburger">
           <Button size="sm" variant="ghost" onClick={onOpen}>
@@ -121,13 +130,3 @@ const Header = ({ href, children }: any) => {
 }
 
 export default Header
-
-// {session && (
-//   <Box mr="0" pt="6" pl="3" pr="6" >
-//     <Tooltip label="Lockdown projects">
-//       <Button size="sm" variant="ghost" onClick={onLockProjects} width="40px" position="relative" bottom="2px" >
-//         <LockIcon />
-//       </Button>
-//     </Tooltip>
-//   </Box>
-// )}

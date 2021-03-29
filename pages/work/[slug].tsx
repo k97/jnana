@@ -1,12 +1,12 @@
 import { useRouter } from 'next/router'
 import { useState, useRef, useEffect } from "react"
-import { signIn, signOut, useSession, getSession, csrfToken } from 'next-auth/client'
 import Head from 'next/head'
 import ErrorPage from 'next/error'
 import Link from 'next/link'
-import mediumZoom from 'medium-zoom'
+import { signIn, signOut, useSession, getSession, csrfToken } from 'next-auth/client'
 
 import { Center, CircularProgress, Container, Heading, Image, Flex, Box, Button } from "@chakra-ui/react"
+import mediumZoom from 'medium-zoom'
 
 import { getWorkBySlug, getAllWork } from '../../lib/work-api'
 import { CMS_NAME } from '../../lib/constants'
@@ -24,12 +24,12 @@ const work = ({ work }: Props) => {
   const [session, loading]: any = useSession()
   const contentRef = useRef(null)
 
-
   if (!router.isFallback && !work?.slug) {
     return <ErrorPage statusCode={404} />
   }
 
   useEffect(() => {
+
     const showLockScreen = async () => {
       const session = await getSession();
       if (work.author.private && !session) {
@@ -37,6 +37,8 @@ const work = ({ work }: Props) => {
       }
     };
     showLockScreen();
+
+    // Trigger Medium Zoom Images to be enabled
     setTimeout(() => {
       const ele: any = contentRef.current;
       if (ele && ele.textContent.length > 0) {

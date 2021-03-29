@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Container, Button, Heading, Text, Grid, GridItem, Box, Image, Flex } from "@chakra-ui/react"
+import { HeroImage } from './hero-image'
 
 const HeroIntro = () => {
   return (
@@ -19,9 +20,12 @@ const HeroIntro = () => {
 
         <Box width={{ base: "5%", sm: "0%", md: "0%", lg: "5%" }} />
 
-        <Box width={{ base: "0%", sm: "0%", md: "0%", lg: "55%" }}>
-          <Image src="/assets/hero.svg" className="hero-static" />
+        <Box width={{ base: "0%", sm: "0%", md: "0%", lg: "55%" }} >
+          <Box className="hero-static" position="absolute" mt={{ base: 0, sm: 0, md: -75 }}>
+            <HeroImage />
+          </Box>
         </Box>
+
       </Flex>
     </Container >
   )

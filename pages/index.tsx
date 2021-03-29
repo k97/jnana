@@ -20,7 +20,7 @@ const Index = () => {
           background-repeat: no-repeat;
           background-attachment: fixed;
         }
-        .header-background {
+        .header-menu {
           border: none;
           backdrop-filter: none;
           box-shadow: none!important;

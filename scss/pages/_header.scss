@@ -1,5 +1,12 @@
 .chakra-ui-dark {
+
   .klogo svg {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+
+  .lock-icon svg {
+    opacity: 0.45;
     -webkit-filter: invert(1);
     filter: invert(1);
   }
