@@ -41,7 +41,7 @@ export default function SignIn({ csrfToken }: any) {
 
       <Container maxW="container.xl">
 
-        <Heading as="h2" fontSize={{ sm: "2xl", md: "4xl" }} fontWeight="800" color="gray.700" mt={50} mb={5}>Private Information</Heading>
+        <Heading as="h2" fontSize={{ sm: "2xl", md: "4xl" }} fontWeight="800" opacity="0.85" mt={50} mb={5}>Private Information</Heading>
 
         <form method='post' action='/api/auth/callback/credentials'>
           <Text fontSize={{ sm: "lg", md: "2xl" }}>Please enter the passphrase to proceed to the project.</Text>
