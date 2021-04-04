@@ -7,7 +7,7 @@ const ToolsCard = () => {
     {
       title: "Yanx",
       cover: '/assets/tools/cover/yanx.png',
-      description: "Google Chrome browser extension to take notes on new-tab space",
+      description: "Google Chrome browser extension to quickly take notes on the new-tab workspace, the notes are saved for 7 days providing reference value",
       isExternal: true,
       link: "https://chrome.google.com/webstore/detail/yanx/difdegoclpgdhiagmenkbcfabilednaj?hl=en",
       source: "https://github.com/k97/yanx-chrome"
