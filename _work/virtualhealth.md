@@ -12,7 +12,7 @@ author:
   madewith: Figma, Zeplin, React, NextJS
   product: iOS, Android and Web
 ogImage:
-  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/metax.png"
+  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/cover.png"
 ---
 
 > Telstra Health’s Virtual Health service offering is powered by a suite of products that are used by patients and healthcare providers. I helped identify the touchpoints and designing the products that deliver value through the virtual health experience: from patient onboarding to service delivery.
@@ -21,7 +21,7 @@ ogImage:
 
 As the lead designer or senior designer, if you will, my role has evolved as we expanded our team at Virtual Clinical Solutions. We worked through the product aspects in our adapted version of the design sprint and delivered these iterated features through a development sprint. The working model is very close to a functional double-diamond with our interpretation of the intersection with product test & validation strategies.
 
-![Design Process](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/process.png)
+![Design Sprint](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/process.png)
 
 ## Concept & development
 
@@ -45,16 +45,16 @@ A large part of my time was spent on product development, leading the design of 
 
 <div class="work-full-img work-img-border">
 
-![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/1.png)
-![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/2.png)
-![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/4.png)
-![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/5.png)
+![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/vhp-2.png)
+![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/vhp-3.png)
+![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/vhp-4.png)
+![](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/screen/vhp-1.png)
 
 </div>
 
 ### Design system
 
-Telstra Health’s larger design team founded a design system and I continued to contribute to it, in addition to leading the design of Virtual Clinical Solutions. It was truly a team effort! So many people at Telstra Health contributed through different means and helped build the design system, internally called “DNA”.
+Telstra Health’s larger design team founded a design system and I continued to contribute to it, in addition to leading the design of Virtual Clinical Solutions. It was truly a team effort! So many people at Telstra Health contributed through different means and helped build the design system, internally called 'DNA'.
 
 ### Component
 

@@ -12,7 +12,7 @@ author:
   madewith: Figma, Zeplin, Xamarin
   product: iOS, Android
 ogImage:
-  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/metax.png"
+  url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/hn/cover.png"
 ---
 
 > HealthNow has been part of Virtual Clinical Solutions officially since 2019. I was the product designer taking care of the mobile apps to the supporting web app and the store assets that included the logos, the communique messages that were dispatched through the product.
