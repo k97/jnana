@@ -21,7 +21,7 @@ ogImage:
 
 The project goal was to revamp the existing desktop client into a web product and deliver a first-hand booking experience for the callers through telephonic conversation.
 
-![](https://s3-ap-southeast-2.amazonaws.com/k97static/project-snaps/ssui-2-search.png)
+![Design](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/ek-res/res-1.png)
 
 ## Design Sprint
 
@@ -31,9 +31,7 @@ Redesigning and building a product in a large organization has its intricacies. 
 
 We approached the designs using Google Material Design guidelines after multiple user test validations with different design styleguides. I collaborated with the UX research team to identify user touchpoints and visualize them as design concepts or prototypes.
 
-![](https://s3-ap-southeast-2.amazonaws.com/k97static/project-snaps/ssui-3-payments.png)
-
-![Layout](https://s3-ap-southeast-2.amazonaws.com/k97static/project-snaps/ssui-4-xray-components.png)
+![Design](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/ek-res/res-2.png)
 
 The prototypes were later put into test stages and we planned out the test scripts to validate product assumptions. The engagement of the users was a key factor to collect quantitative test data for further design iterations.
 
@@ -41,9 +39,13 @@ The prototypes were later put into test stages and we planned out the test scrip
 
 Even though material design language was in its infancy, the solid documentation base allowed us to empathize with the idea and further extend our interpretation of several new components. I designed these new custom components that were not part of the initial material design releases. Some of these custom components were Accordions, Form Steppers, range sliders, file-upload interface, etc. The design specs were formulated after much deliberation on design and interaction prototypes and after validating their usage on functional modules.
 
+![Components](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/ek-res/res-0.png)
+
 ### Engineering
 
 I worked closely with the user interface developers to deliver the custom components as components and managed the versions through a release life cycle across the organization, thus fostering independent iteration of these components with enhanced feature sets.
+
+![Components](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/ek-res/res-6.png)
 
 For custom styles, we took the SMACSS routes with BEM as the standard for naming elements, since we were operating with a fairly large amount of developers, interpretation of existing selectors was important to avoid code duplication and cut down on repaints or overrides.
 
