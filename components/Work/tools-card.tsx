@@ -39,7 +39,7 @@ const ToolsCard = () => {
   return (
     <>
       {toolCollection.map((tool: any) => (
-        <>
+        <Box key={tool.title}>
           <Flex pt="6" pb="6">
             <Center display={{ base: "none", sm: "none", md: "inherit" }} width="120px" mr="5" >
               {tool.cover && <Image src={tool.cover} alt={`Cover Image for ${tool.cover}`} rounded="2xl" />}
@@ -60,8 +60,7 @@ const ToolsCard = () => {
             </Box>
           </Flex>
           <Divider />
-        </>
-
+        </Box>
       ))}
     </>
 

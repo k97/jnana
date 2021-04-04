@@ -64,6 +64,7 @@ const work = ({ work }: Props) => {
         <title>
           {work.title} | {CMS_NAME}
         </title>
+        <meta property="og:description" content={work.excerpt} />
         <meta property="og:image" content={work.ogImage.url} />
       </Head>
 
@@ -119,6 +120,7 @@ export async function getStaticProps({ params }: Params) {
     'content',
     'ogImage',
     'coverImage',
+    'excerpt'
   ])
 
   const content = await markdownToHtml(work.content || '');
