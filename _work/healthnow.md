@@ -15,7 +15,7 @@ ogImage:
   url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/hn/cover.png"
 ---
 
-> HealthNow has been part of Virtual Clinical Solutions officially since 2019. I was the product designer taking care of the mobile apps that enables access to medical appointments, connects to Australian Government's My Health Record and useful in finding hospitals and other healthcare services.
+> HealthNow has been part of Virtual Clinical Solutions officially since 2019. I was the product designer taking care of the mobile apps that enable access to medical appointments, connects to the Australian Government's My Health Record and useful in finding hospitals and other healthcare services.
 
 ## Design System
 

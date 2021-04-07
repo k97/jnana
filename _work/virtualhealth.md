@@ -1,6 +1,6 @@
 ---
-title: "Virtual Health "
-excerpt: "A platform of products and services to deliver virtual health solution"
+title: "Virtual Health"
+excerpt: "A healthcare platform of products and services to deliver virtual health solution"
 coverImage: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/cover/th.png"
 date: "2020-10-21T00:00:00.000Z"
 author:
@@ -15,7 +15,7 @@ ogImage:
   url: "https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/vhp/cover.png"
 ---
 
-> Telstra Health’s Virtual Health service offering is powered by a suite of products that are used by patients and healthcare providers. I helped identify the touchpoints and designing the products that deliver value through the virtual health experience: from patient onboarding to service delivery.
+> Telstra Health’s Virtual Health service offering is powered by a suite of products that are used by patients and healthcare providers. I helped identify the touchpoints and design the products that deliver value through the virtual health experience: right from patient onboarding through till service delivery.
 
 ## The Design Team
 
