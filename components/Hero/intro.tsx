@@ -10,7 +10,7 @@ const HeroIntro = () => {
 
           <Text fontSize={{ sm: "2xl", md: "3xl" }} fontWeight="500" casing="uppercase" mb="0" pb="0">Hello! I am</Text>
           <Heading as="h1" fontSize={{ sm: "5xl", md: "6xl" }} fontWeight="900" mt="0" pt="0">Karthik</Heading>
-          <Text fontSize={{ sm: "xl", md: "2xl" }} mt="5" mb="6">Generalist Product Designer based in Melbourne, who likes to code, create experiences that makes people’s lives better</Text>
+          <Text fontSize={{ sm: "xl", md: "2xl" }} mt="5" mb="6">Generalist product designer based in Melbourne, who likes to code, create experiences that makes people’s lives better</Text>
 
           <Link href="/about">
             <Button colorScheme="brand" fontSize="xl" size="lg" shadow="xl" _hover={{ shadow: "sm", background: "brand.400" }} >More about me</Button>
