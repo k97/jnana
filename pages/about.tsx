@@ -20,7 +20,7 @@ const About = () => {
 
             <Text mt="8" mb="8">My full name is Karthikeyan Rajendran, a design generalist, who loves to solve problems with a focus on <a href="https://en.wikipedia.org/wiki/Human-centered_design" target="_blank">HCD ↗</a> and functional design. Good design solutions help build traction with end-users and grow business. I enjoy spending my time on designing solutions for products that creates value.</Text>
 
-            <Text mb="8">I have experience in designing for with health, travel, big data, sports and entertainment businesses. Right now, I'm working as Product Designer at <a href="https://telstrahealth.com/" target="_blank">Telstra Health ↗</a> in Melbourne, designing and building digital products for virtual healthcare.</Text>
+            <Text mb="8">I have experience in designing for with health, travel, big data, sports and entertainment businesses. Right now, I'm working as product designer at <a href="https://telstrahealth.com/" target="_blank">Telstra Health ↗</a> in Melbourne, designing and building digital products for virtual healthcare.</Text>
 
             <Text mb="8">Before Telstra Health, I was working across <a href="https://www.emirates.com/au/english/about-us/">Emirates Airlines ↗</a> with different teams to deliver products used by the flight crew and customers. I started my trade as product designer at FastTrack360 cloud systems.</Text>
 
