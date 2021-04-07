@@ -46,6 +46,11 @@ const About = () => {
 
           </Box>
 
+          <Box width={{ base: "0%", sm: "0%", md: "0%", lg: "2%" }} />
+
+          <Box width={{ base: "0%", sm: "0%", md: "0%", lg: "38%", xl: "38%" }} >
+            <Image src="https://k97static.s3-ap-southeast-2.amazonaws.com/v8/karthik-circle.png" className="hero-static" alt="Karthik sitting down" mt={{ base: 0, sm: 0, md: 150 }} />
+          </Box>
 
         </Flex>
       </Container >
