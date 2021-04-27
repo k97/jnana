@@ -18,11 +18,11 @@ const About = () => {
           <Box width={{ base: "100%", sm: "100%", md: "100%", lg: "60%", xl: "60%" }} fontSize={{ sm: "xl", md: "2xl" }}>
             <Heading as="h2" fontSize={{ sm: "2xl", md: "4xl" }} fontWeight="800" opacity="0.9" mt="40px">About</Heading>
 
-            <Text mt="8" mb="8">My full name is Karthikeyan Rajendran, a design generalist, who loves to solve problems with a focus on <a href="https://en.wikipedia.org/wiki/Human-centered_design" target="_blank">HCD ↗</a> and functional design. Good design solutions help build traction with end-users and grow business. I enjoy spending my time on designing solutions for products that creates value.</Text>
+            <Text mt="8" mb="8">My full name is Karthikeyan Rajendran, a design thinker and strategist, who loves to solve problems with a focus on <a href="https://en.wikipedia.org/wiki/Human-centered_design" target="_blank">HCD ↗</a> and functional design. Good solutions help build traction with end-users and grow businesses. I enjoy spending my time designing solutions for products that creates value.</Text>
 
-            <Text mb="8">I have experience in designing for with health, travel, big data, sports and entertainment businesses. Right now, I'm working as product designer at <a href="https://telstrahealth.com/" target="_blank">Telstra Health ↗</a> in Melbourne, designing and building digital products for virtual healthcare.</Text>
+            <Text mb="8">I have experience in designing for health, travel, big data, sports and entertainment business domains ranging from startups to enterprises. Right now, I'm working as a product designer at <a href="https://telstrahealth.com/" target="_blank">Telstra Health ↗</a> in Melbourne, designing and building digital products for virtual healthcare.</Text>
 
-            <Text mb="8">Before Telstra Health, I was working across <a href="https://www.emirates.com/au/english/about-us/">Emirates Airlines ↗</a> with different teams to deliver products used by the flight crew and customers. I started my trade as product designer at FastTrack360 cloud systems.</Text>
+            <Text mb="8">Before Telstra Health, I was working across <a href="https://www.emirates.com/au/english/about-us/">Emirates Airlines ↗</a> with different teams to deliver products used by the flight crew and customers. I started my trade as a product designer at FastTrack360 cloud systems.</Text>
 
             <Text mb="8">If you are looking for my resume, <a href={GOOGLE_DRIVE_RESUME} target="_blank">it's here ↗</a>.</Text>
 
