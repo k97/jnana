@@ -51,7 +51,7 @@ export const MenuList = [
   },
   {
     id: 4,
-    name: 'Articles',
-    link: '/articles'
+    name: 'Thoughts',
+    link: '/thoughts'
   }
 ];

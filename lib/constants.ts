@@ -1,4 +1,4 @@
-export const CMS_NAME = "Karthik - Digital Product Designer"
+export const CMS_NAME = "Karthik - Design Thinker"
 export const CMS_DESCRIPTION = "Personal portfolio of Karthik — a designer bridging the gap between digital products and people using them."
 export const HOME_OG_IMAGE_URL = 'https://k97static.s3-ap-southeast-2.amazonaws.com/v8/metax.png'
 export const CMS_URL = "https://www.rkarthik.co/"
