@@ -23,7 +23,7 @@ When I started with the designer on this product, the mobile apps lacked a desig
 
 ![Flow](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/hn/workflow.png)
 
-![Design System](/assets/work/hn/designsystem.png)
+![Design System](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/hn/designsystem.png)
 
 ## Product Interface
 
@@ -32,7 +32,7 @@ The product is built on Xamarin and is available for Android and iOS mobile plat
 
 ### Pre update interfaces
 
-![Old App screens](/assets/work/hn/old-screens.png)
+![Old App screens](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/hn/old-screens.png)
 
 
 ### Updated interfaces
