@@ -17,13 +17,18 @@ ogImage:
 
 > HealthNow has been part of Virtual Clinical Solutions officially since 2019. I was the product designer taking care of the mobile apps that enable access to medical appointments, connects to the Australian Government's My Health Record and useful in finding hospitals and other healthcare services.
 
-## Design System
+## Opportunities & outcomes
+HealthNow was available for android and iOS mobile platform and we were tasked with researching and finding opportunities to provide value to patients. We used a range of research techniques starting from qualitative methods to usability testing for quantitative validation. These methods helped us make data-driven design decisions that led to revamping the identity signup while we switched hosting solutions, rediscover the way patients interacted with the app by making the navigation simpler and promoting telehealth services, COVID-19 vaccination status and continuously improve the application performance through customer engagements.
 
-When I started with the designer on this product, the mobile apps lacked a design system and I reverse-engineered and designed one for HealthNow based on the current state of the product and then proceeded to revamp the designs. The initial abstract from the analysis enabled us to take stock of the components that were inconsistent in usage. These inconsistencies were then an easy fix when driving updates through a design system. There were gaps to work within the apps in terms of indifferent controls representing actions, updating these required workflow mapping, and understanding the user journey. Once we were able to get that information sorted and validated, then it gave us the confidence to patch our updates through the design system. Once the design system was in place, we were able to scale the feature updates quickly with a short turnaround time for high-fidelity screen designs and iterations.
 
 ![Flow](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/hn/workflow.png)
 
+## Design System
+When I started with the design on this product, the mobile apps lacked a design system and I reverse-engineered and designed one based on the current state of the product and then proceeded to revamp the interfaces. The initial abstract from the analysis enabled us to take stock of the components that were inconsistent in usage. These inconsistencies were relatively an easy fix when driving updates through a design system. There were gaps to work within the apps in terms of indifferent controls representing actions, updating these required workflow mapping, and understanding the user journey. Once we were able to get that information validated, it gave us the confidence to patch our updates through the design system with scaled solutions saving cost and time in the long-term.
+
 ![Design System](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/hn/designsystem.png)
+
+![Design System Reference](https://k97static.s3-ap-southeast-2.amazonaws.com/v8/work/hn/ds-colours.png)
 
 ## Product Interface
 
